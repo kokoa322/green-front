@@ -3,89 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/rwdcommon.css">
-    <title>디자인코코 업데이트 시작</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <link rel="stylesheet" media="all" type="text/css" href="css/index_set.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/index_layout.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/search.css" />
+    <title>영화 그 이상의 감동. CGV</title>
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="wrap">
-        <header id="header">
-            <div class="top_menu">
-                <div class="row">
-                    <div class="search">
-                        <span class="blind">검색어를 입력하세요</span>
-                        <input type="text" id="sbox" placeholder="검색어 입력">
-                        <label for="sbox"><i class="fas fa-search"></i></label>
-                    </div>
-                    <a href="index.html"><i class="fas fa-home"></i> HOME</a>
-                    <a href="#none"><i class="fas fa-lock"></i> 로그인</a>
-                    <a href="join.html"><i class="fas fa-sign-in-alt"></i> 회원가입</a>
-                </div>
-            </div>
-            <div class="row">
-                <h1><a href="index.html"><img src="img/logo.png" alt="디자인코코"></a></h1>
-                <div class="opennav">
-                    <span class="blind">네비게이션열고닫기</span>
-                    <i class="fas fa-bars"></i>
-                </div>
-                <nav id="nav">
-                    <ul class="depth1">
-                            <li>
-                                <a href="company.html">회사소개</a>
-                                <ul class="depth2">
-                                    <li><a href="company.html">회사소개</a></li>
-                                    <li><a href="#none">CEO 인사말</a></li>
-                                    <li><a href="#none">회사연혁</a></li>
-                                    <li><a href="#none">오시는 길</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#none">사업소개</a>
-                                <ul class="depth2">
-                                    <li><a href="#none">사업분야</a></li>
-                                    <li><a href="#none">사업분야2</a></li>
-                                    <li><a href="#none">인증서</a></li>
-                                    <li><a href="#none">파트너</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#none">제품소개</a>
-                                <ul class="depth2">
-                                    <li><a href="#none">제품 01</a></li>
-                                    <li><a href="#none">제품 02</a></li>
-                                    <li><a href="#none">제품 03</a></li>
-                                    <li><a href="#none">제품 04</a></li>
-                                    <li><a href="#none">제품 05</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#none">고객센터</a>
-                                <ul class="depth2">
-                                    <li><a href="#none">고객상담</a></li>
-                                    <li><a href="#none">문의게시판</a></li>
-                                    <li><a href="#none">공지사항</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#none">커뮤니티</a>
-                                <ul class="depth2">
-                                    <li><a href="#none">FAQ</a></li>
-                                    <li><a href="#none">이벤트</a></li>
-                                </ul>
-                            </li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
+    <header class="index_header"></header>
         <section id="section">
             <article class="article1">
                 <div class="slide-group">
@@ -99,7 +36,7 @@
                     </div>
                     <div class="slide slide2">
                         <div class="slide_text">
-                            <h2>자연에 가치를 더하다</h2>
+                            <h2>    </h2>
                             <p>당신과 함께하는 좋은 파트너가 되고 싶습니다.<br>
                                 최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다. </p>
                             <a href="#none">바로가기</a>
@@ -372,8 +309,10 @@
     <script src="./js/common.js"></script>
     <script src="./js/index.js"></script>
 
-
+    
+    
 <script>
+      $("header").load("header.html");
     // 제이쿼리
     let $elFam = $('#footer .fam')
     let $elLi = $('.article5 .cs_board .tabmenu > li')
