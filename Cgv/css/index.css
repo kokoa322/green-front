@@ -47,10 +47,9 @@ body {
 #header > .row h1 {
   padding: 25px 0;
 }
-#header > .row h1 img{
+#header > .row h1 img {
   width: 117px;
 }
-
 
 #header > .row #nav {
   width: 60%;
@@ -478,4 +477,4 @@ body {
 }
 #footer .privacy span.active ul {
   display: block;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
