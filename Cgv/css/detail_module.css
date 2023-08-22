@@ -712,6 +712,8 @@ div[class^="sect-"] .btn-itemmore {
     no-repeat;
   font: 0/0 a;
   zoom: 1;
+  margin-bottom: -40;
+  margin-right: -40;
 }
 .layer-wrap .popwrap {
   position: relative;
