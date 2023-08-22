@@ -1177,6 +1177,7 @@ div[class^="sect-"] .btn-itemmore {
 .paging {
   text-align: center;
   margin-top: 25px;
+  margin-left: 300px;
 }
 .paging > ul {
   display: inline-block;
@@ -1308,7 +1309,7 @@ div[class^="sect-"] .btn-itemmore {
 /* 회색 헤딩 메뉴 */
 .heading {
   position: relative;
-  width: 100%;
+  width: 122%;
   height: 39px;
   background: #f6f6f6;
 }
@@ -2469,11 +2470,12 @@ div[class^="sect-"] .btn-itemmore {
 
 /* 영화상세- 트레일러 */
 .wrap-movie-detail .sect-trailer > ul {
-  margin-left: -10px;
+  margin-left: -58px;
+  width: 122%;
 }
 .wrap-movie-detail .sect-trailer li {
   width: 260px;
-  margin: 0 0 15px 10px;
+  margin: 0 0 15px 65px;
 }
 .wrap-movie-detail .sect-trailer li .box-image {
   width: 260px;
@@ -2484,8 +2486,8 @@ div[class^="sect-"] .btn-itemmore {
   height: 142px;
 }
 .wrap-movie-detail .sect-trailer li .thumb-image img {
-  width: 260px;
-  height: 142px;
+  width: 122%;
+  height: 190px;
 }
 .wrap-movie-detail .sect-trailer .title {
   margin-top: 10px;
@@ -2517,6 +2519,9 @@ div[class^="sect-"] .btn-itemmore {
 }
 .wrap-movie-detail .sect-movielist li .box-contents {
   margin-top: 10px;
+}
+#ctl00_PlaceHolderContent_Section_Trailer ul li .box-contents {
+  margin-top: 60px;
 }
 
 /* 평점 */
@@ -3524,6 +3529,7 @@ div[class^="sect-"] .btn-itemmore {
 .sect-grade .wrap-persongrade > ul {
   border-top: 1px solid #999999;
   color: #333333;
+  width: 116%;
 }
 .sect-grade .wrap-persongrade > ul > li {
   padding: 30px 0;
@@ -3635,6 +3641,7 @@ div[class^="sect-"] .btn-itemmore {
 .sect-grade .tab-menu-round li {
   width: 170px;
 }
+
 /* .sect-review {} */
 .sect-review > ul > li {
   padding: 30px 0 20px;
@@ -14900,7 +14907,7 @@ span.col_red {
 
 .wrap-grade .wrap-persongrade > ul.point_col2 > li:nth-child(2n + 1),
 .wrap-movie-detail .wrap-persongrade > ul.point_col2 > li:nth-child(2n + 1) {
-  width: 374px;
+  width: 460px;
   padding-left: 1px !important;
   border-right: 1px solid #ddd;
 }
