@@ -97,7 +97,7 @@ body {
 #section .article1 ul li:hover > div {
   bottom: 20%;
 }
-#section .article2 > h2{
+#section .article2 > h2 {
   text-align: left;
   margin-left: 20px;
 }
@@ -113,9 +113,8 @@ body {
   border: 1px solid #fff;
   text-align: center;
   margin-bottom: 20px;
-
 }
-#section .article2 ul li img{
+#section .article2 ul li img {
   height: 207px;
   border-radius: 10px;
 }
@@ -161,57 +160,55 @@ body {
   transform: scale(1.2);
 }
 
-#section .article3 > h2{
+#section .article3 > h2 {
   text-align: left;
   margin-left: 20px;
-  
 }
-#section .article3 .gallery{
+#section .article3 .gallery {
   display: flex;
   justify-content: space-between;
 }
-#section .article3 .gallery .image{
+#section .article3 .gallery .image {
   overflow: hidden;
   width: 600px;
 }
-#section .article3 .gallery .image ul{
+#section .article3 .gallery .image ul {
   display: flex;
 }
 
-#section .article3 img{
+#section .article3 img {
   width: 600px;
-  
 }
-#section .article3 .text{
+#section .article3 .text {
   width: 500px;
 }
 
-#section .article3 .text p{
+#section .article3 .text p {
   height: 50px;
   line-height: 50px;
   padding: 10px;
   border-top: 1px solid #f6f6f6;
 }
 
-#section .article3 .text p:hover{
- border: 1px solid black;
- border-radius: 10px;
+#section .article3 .text p:hover {
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-#section .article3 .text strong{
+#section .article3 .text strong {
   font-size: 18px;
   padding-right: 10px;
   color: #222;
 }
 
-#section .article3 .text span{
+#section .article3 .text span {
   font-size: 14px;
   padding-left: 10px;
   color: #666;
   background: #f6f6f6;
 }
 
-#section .article4{
+#section .article4 {
   border: 2px solid #f6f6f6;
   border-radius: 10px;
   margin-top: 30px;
@@ -225,36 +222,34 @@ body {
   border-right: 2px solid #f6f6f6;
 }
 
-
-#section .article4 .notice_wrap{
+#section .article4 .notice_wrap {
   border-bottom: 1px solid #f6f6f6;
   padding-bottom: 10px;
 }
 
-#section .article4 .client_wrap{
+#section .article4 .client_wrap {
   padding-top: 19px;
   padding-bottom: 22px;
   font-size: 14px;
 }
 
-#section .article4 .client_wrap .client_list{
+#section .article4 .client_wrap .client_list {
   display: flex;
 }
-#section .article4 .client_wrap .client_list dd{
+#section .article4 .client_wrap .client_list dd {
   padding-left: 28px;
 }
 
-#section .article4 strong{
+#section .article4 strong {
   font-size: 16px;
   color: #222;
-  
 }
-#section .article4 .btn_link{
+#section .article4 .btn_link {
   font-size: 14px;
   margin-top: 2px;
   margin-left: 28px;
 }
-#section .article4 .client_btn_wrap a{
+#section .article4 .client_btn_wrap a {
   font-size: 14px;
   padding-left: 10px;
   text-align: center;
@@ -263,16 +258,15 @@ body {
   padding: 7px 14px;
 }
 
-#section .article4 .qr_wrap{
+#section .article4 .qr_wrap {
   text-align: center;
   padding: 24px 26px 20px 120px;
-
 }
-#section .article4 .img_wrap img{
-  width: 60px; height: 60px;
+#section .article4 .img_wrap img {
+  width: 60px;
+  height: 60px;
   margin: 20px 20px;
 }
-
 
 /* 푸터 */
 #footer {
