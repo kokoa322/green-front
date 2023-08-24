@@ -1,50 +1,31 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-  <head>
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/index_set.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_set.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_layout.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_module.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/eggupdate.css"
-    />
+$.ajax({
+  type: "GET",
+  url: "./json/movieData.json",
+  dataType: "json",
+  success(movieInfo) {
+    console.log(movieInfo.movie);
+    //해당하는 영화의 정보들
+    const {
+      name,
+      director,
+      actors,
+      price,
+      genre,
+      sating,
+      showtime,
+      mainSummary,
+      summary,
+      releaseDate,
+      reservationRate,
+    } = movieInfo.movie[0];
 
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_preegg.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
-  <body>
+    const [img1, img2, img3, img4] = movieInfo.movie[0].image;
+
+    const [coment1, coment2, coment3, coment4, coment5, coment6] =
+      movieInfo.movie[0].coments;
+
+    $("body").append(`
+      <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
     <header></header>
     <div id="cgvwrap">
       <div id="contaniner" class="">
@@ -71,64 +52,38 @@
               </div>
               <div class="box-contents">
                 <div class="title">
-                  <strong>오펜하이머</strong>
+                  <strong>${name}</strong>
                   <em class="round lightblue"><span>현재상영중</span></em>
 
                   <p>Oppenheimer</p>
                 </div>
                 <div class="score">
                   <strong class="percent"
-                    >예매율&nbsp;<span>63.4%</span></strong
+                    >예매율&nbsp;<span>${reservationRate}</span></strong
                   >
                 </div>
                 <div class="spec">
                   <dl>
-                    <dt>감독 :&nbsp;</dt>
+                    <dt>감독 :&nbsp;${director}</dt>
                     <dd>
-                      <a href="/movies/persons/?pidx=11015">크리스토퍼 놀란</a>
+                      <a href="/movies/persons/?pidx=11015"></a>
                     </dd>
 
                     <dd></dd>
 
                     <dt>&nbsp;/ 배우 :&nbsp;</dt>
                     <dd class="on">
-                      <a href="/movies/persons/?pidx=27249">킬리언 머피</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=106493">에밀리 블런트</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=571">맷 데이먼</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=892"
-                        >로버트 다우니 주니어</a
-                      >
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=116288">플로렌스 퓨</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=10568">조쉬 하트넷</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=11676">케이시 애플렉</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=118320">라미 말렉</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=436">케네스 브래너</a>
+                      ${actors}
                     </dd>
 
-                    <dt>장르 :&nbsp;스릴러,&nbsp;드라마</dt>
+                    <dt>장르 :&nbsp;${genre}</dt>
                     <dd></dd>
                     <dt>&nbsp;/ 기본 정보 :&nbsp;</dt>
                     <dd class="on">
-                      15세이상관람가,&nbsp;180분,&nbsp;미국, 영국
+                      ${sating},&nbsp;${showtime}
                     </dd>
                     <dt>개봉 :&nbsp;</dt>
-                    <dd class="on">2023.08.15</dd>
+                    <dd class="on">${releaseDate}</dd>
                   </dl>
                 </div>
                 <span class="like">
@@ -234,7 +189,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217720_1024.jpg"
+                              src="${img1}"
                               alt="[오펜하이머]5분 하이라이트 영상"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -269,7 +224,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217600_1024.jpg"
+                              src="${img2}"
                               alt="[오펜하이머]세상을 바꾼 사람들"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -304,7 +259,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217533_1024.jpg"
+                              src="${img3}"
                               alt="[오펜하이머]세상을 바꾼 순간"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -389,10 +344,10 @@
                       <div class="item-wrap on">
                         <div class="item" style="width: 122%; height: 450px">
                           <img
-                            data-src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg"
+                            data-src="${img4}"
                             alt="오펜하이머"
                             onerror="errorImage(this)"
-                            src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg"
+                            src="${img4}"
                             style="width: 100%; margin-bottom: 200px"
                           />
                         </div>
@@ -927,10 +882,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>jb**525
+                              <span class="egg-icon good"></span>${coment1.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment1.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702102"
@@ -982,8 +937,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            영화가 전하고 싶은 내용이 뭔지 확실히 전달되는
-                            느낌이었어요
+                          ${coment1.coment}
                           </p>
                         </div>
                       </li>
@@ -1001,7 +955,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment1.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1014,10 +968,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>se**3538
+                              <span class="egg-icon good"></span>${coment2.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment2.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702100"
@@ -1068,7 +1022,7 @@
                           </ul>
                         </div>
                         <div class="box-comment">
-                          <p>오펜하이머를 향한 놀란의 러브레터</p>
+                          <p>${coment2.coment}</p>
                         </div>
                       </li>
                       <li
@@ -1085,7 +1039,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/MyCGV/Profile/2017/0808/shinsland_053751_M.jpg"
+                              src="${coment2.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1096,10 +1050,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>테디신이
+                              <span class="egg-icon good"></span>${coment2.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment2.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702099"
@@ -1151,8 +1105,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            한 편의 전기문을 영화로 본 느낌! 역시 놀란의 작품은
-                            놀라워.
+                            ${coment3.coment}
                           </p>
                         </div>
                       </li>
@@ -1170,7 +1123,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment3.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1183,10 +1136,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>mo**oo
+                              <span class="egg-icon good"></span>${coment4.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment4.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702090"
@@ -1254,7 +1207,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/MyCGV/Profile/2022/0101/loveji6568_113509_M.jpg"
+                              src="${coment4.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1265,10 +1218,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>썸머파티
+                              <span class="egg-icon good"></span>${coment5.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment5.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702082"
@@ -1320,9 +1273,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            배우들의 연기는 너무너무 좋았어요. 그러나 방대한
-                            대화량에 조금씩 지쳐 살짝 졸리고 했지만 영화자체는
-                            굉장히 좋았어요.
+                          ${coment5.coment}
                           </p>
                         </div>
                       </li>
@@ -1340,7 +1291,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment5.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1351,10 +1302,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>xz**d99
+                              <span class="egg-icon good"></span>${coment6.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment6.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702077"
@@ -1609,5 +1560,10 @@
     <script>
       $("header").load("header.html");
     </script>
-  </body>
-</html>
+
+      `);
+  },
+  error(xhr) {
+    alert(xhr.status + "/" + xhr.errorText);
+  },
+});
