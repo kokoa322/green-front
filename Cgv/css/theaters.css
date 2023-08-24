@@ -33,6 +33,7 @@ body {
 #section .article1 .sect-common .sect-city1 > ul{
     display: flex;
     justify-content: space-between;
+    padding-left: 37px;
 }
 
 #section .article1 .sect-common .sect-city1 > ul > li{
@@ -41,7 +42,7 @@ body {
 }
 
 #section .article1 .sect-common .sect-city1 > ul > li a{
-    padding: 0 19px;
+    /* padding: 0 19px; */
 }
 
 #section .article1 .sect-common .sect-city1 > ul > li:hover a{
@@ -51,10 +52,14 @@ body {
     display: block; 
     text-align: center;}
      
-#section .article1 .sect-common .sect-city2 > ul{
+#section .article1 .sect-common .sect-city2.view > ul{
     display: flex;
-    }
-
+    flex-wrap: wrap;
+}
+#section .article1 .sect-common .sect-city2.unview >ul{
+    display: none;
+    
+}
 #section .article1 .sect-common .sect-city2 > ul > li{
     font-size: 12px;
     color: #dbdbdb;
@@ -64,6 +69,9 @@ body {
 #section .article1 .sect-common .sect-city2 > ul > li a{
     padding: 0 19px;
     border-right: 1px solid #dbdbdb;
+}
+#section .article1 .sect-common .sect-city2 > ul > li:last-child a {
+    border-right: none;
 }
 
 #section .article1 .wrap-theater h3{
