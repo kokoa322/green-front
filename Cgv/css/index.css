@@ -11,7 +11,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-#section h2 {
+#section .moviechart {
   color: #000;
   font-size: 36px;
   line-height: 42px;
@@ -20,6 +20,14 @@ body {
   text-align: center;
   font-size: 26px;
 }
+#section .article1 ul {
+  position: relative;
+}
+#section .article1 ul li .cgvIcon {
+  position: absolute; top: 5px; right: 5px;
+  width: 30px; height: 30px;
+}
+
 #section .article1 > p {
   padding-bottom: 40px;
   text-align: center;
