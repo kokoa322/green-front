@@ -1,21 +1,12 @@
 * {margin:0; padding: 0;}
 
-
-.agreement {
-    overflow:scroll; width:900px; height:90px; font-size: 13px;  background-color: white;
-}
-.agreeArea {
-    text-align: left;
-    margin-left: 20px;
-}
-
 #header {background-color: #222222; }
-#header .word { max-width: 1200px; min-width: 900px; margin: 0 auto; display: flex; color: #8f8f8c; height: 90px; display: flex; justify-content: space-between; }
+#header .word { max-width: 1200px; margin: 0 auto; display: flex; color: #8f8f8c; height: 90px; display: flex; justify-content: space-between; }
 #header .word h2 img {width: 62px; height: 30px; } 
 #header .word h2:nth-child(1) {line-height: 100px; font-weight: lighter; font-size: 18px;} 
 #header .word h2:nth-child(2) {line-height: 90px; font-weight: 500; font-size: 18px;} 
 
-#join {max-width: 900px; margin: 50px auto;}
+#join {max-width: 1200px; margin: 50px auto;}
 #join h1 {text-align: center; font-size: 50px; font-weight: 600; margin-bottom: 100px;}
 
 fieldset  {border: none; border-top:1px solid black; background-color: #f8f8f8; text-align: center;}
