@@ -155,10 +155,9 @@ $.ajax({
                 <!-- 메뉴가 선택되면 a 에 title="선택" 이라고 넣는다 -->
 
                 <div class="sect-story-movie">
-                  <strong>“나는 이제 죽음이요, 세상의 파괴자가 되었다.”</strong
+                  <strong>${mainSummary}</strong
                   ><br />
-                  세상을 구하기 위해 세상을 파괴할 지도 모르는 선택을 해야 하는
-                  천재 과학자의 핵개발 프로젝트.
+                  ${summary}
                 </div>
                 <!-- .sect-staff -->
                 <div
