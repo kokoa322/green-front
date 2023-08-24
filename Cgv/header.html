@@ -17,14 +17,13 @@
     <style>
 
       ul { list-style: none;}
+      .contents {position: relative;}
       .nav_menu {position: relative; }
       .nav_overMenu { width: 150px ; height: 350px; }
       .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.8s;}
       .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -1; }
-      .empty_space {width: 99.7vw; height: 300px; background-color: white; position: absolute; left: -50%; border-bottom: 1px solid grey; bottom: 100%; z-index: -2;} 
+      .empty_space {width: 95vw; height: 300px; background-color: white; position: absolute; left: -50%; border-bottom: 1px solid grey; bottom: 100%; z-index: -2;} 
       .nav_menu:hover .empty_space { bottom: -943%; transition: all 0.7s;}
-      
- 
 
 
     
@@ -323,7 +322,7 @@
                 </dd>
               </dl>
             </li>
-            <li>
+            <!-- <li>
               <h2 onclick="gaEventLog('PC_GNB','주메뉴_해택','')">
                 <a href="/discount/discountlist.aspx">혜택</a>
               </h2>
@@ -349,7 +348,7 @@
                   <h3><a href="/user/vip-lounge/">VIP 라운지</a></h3>
                 </dd>
               </dl>
-            </li>
+            </li> -->
             <div class="empty_space"></div>
           </ul>
         </div>
