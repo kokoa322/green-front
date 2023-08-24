@@ -35,7 +35,7 @@
             <article class="article1 row">
                 <div class="sect-common">
                     <div class="sect-favorite">
-                        <h4><img src="./img/h4_favorite_cgv.png" alt="자주가는 CGV" /></h4>
+                        <h4><img src="./img/h4_favorite_cgv.png" alt="자주가는 CGV"></h4>
                     </div>
                     <div class="sect-city1">
                         <ul>
@@ -50,22 +50,42 @@
                             <li><a href="#">광주/전라/제주</a></li>
                         </ul>
                     </div>
-                    <div class="sect-city2">
+                    <div class="sect-city2 view">
                         <ul>
-                            <li><a href="#">CGV강남</a></li>
-                            <li><a href="#">CGV강변</a></li>
-                            <li><a href="#">CGV건대입구</a></li>
-                            <li><a href="#">CGV경기광주</a></li>
-                            <li><a href="#">CGV계양</a></li>
-                            <li><a href="#">CGV강릉</a></li>
-                            <li><a href="#">CGV대구</a></li>
-                            <li><a href="#">CGV대연</a></li>
-                            <li><a href="#">CGV광양</a></li>
-                            <li><a href="#">CGV광양</a></li>
-                            <li><a href="#">CGV광양</a></li>
-                            <li><a href="#">CGV광양</a></li>
-
-
+                            <li><a href="./img/자주가는CGV/강남.jpg">CGV강남</a></li>
+                            <li><a href="./img/자주가는CGV/강변.png">CGV강변</a></li>
+                            <li><a href="./img/자주가는CGV/건대입구.jpg">CGV건대입구</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
+                            <li><a href="./img/자주가는CGV/고양백석.jpeg">CGV고양백석</a></li>
+                            <li><a href="./img/자주가는CGV/계양.jpg">CGV계양</a></li>
+                            <li><a href="./img/자주가는CGV/강릉.jpg">CGV강릉</a></li>
+                            <li><a href="./img/자주가는CGV/대구.png">CGV대구</a></li>
+                            <li><a href="./img/자주가는CGV/대연.jpg">CGV대연</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
+                        </ul>
+                    </div>
+                    <div class="sect-city2 unview">
+                        <ul>
+                            <li><a href="./img/자주가는CGV/강남.jpg">CGV강남</a></li>
+                            <li><a href="./img/자주가는CGV/강변.png">CGV강변</a></li>
+                            <li><a href="./img/자주가는CGV/건대입구.jpg">CGV건대입구</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
+                            <li><a href="./img/자주가는CGV/고양백석.jpeg">CGV고양백석</a></li>
+                            <li><a href="./img/자주가는CGV/계양.jpg">CGV계양</a></li>
+                            <li><a href="./img/자주가는CGV/강릉.jpg">CGV강릉</a></li>
+                            <li><a href="./img/자주가는CGV/대구.png">CGV대구</a></li>
+                            <li><a href="./img/자주가는CGV/대연.jpg">CGV대연</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/광양.jpg">CGV광양</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
+                            <li><a href="./img/자주가는CGV/경기광주.jpg">CGV경기광주</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +95,7 @@
                         <h4 class="theater-tit"><span>CGV강남</span></h4>
                         <div class="wrap-theaterinfo">
                             <div class="box-image">
-                                <img src="./img/CGVgangnam.jpg" alt="강남">
+                                <img class="image" src="./img/CGVgangnam.jpg" alt="강남">
                             </div>
                             <div class="box-contents">
                                 <div class="theater-info">
@@ -107,40 +127,32 @@
             </div>
         </footer>
     </div>
-    <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
-
     <script>
         $("header").load("header.html");
-        // 제이쿼리
         let $elFam = $('#footer .fam')
         let $elLi = $('.article5 .cs_board .tabmenu > li')
         let $elDiv = $('.article5 .cs_board .contents > div')
-
         $elFam.on('click', function () {
-            //$(this).toggleClass('active')
-            $(this).find('ul').slideToggle()//슬라이드
-            // $(this).children('ul').slideToggle()
+            $(this).find('ul').slideToggle()
         })
-
         $elLi.on('click', function () {
             let num = $(this).index()
             $(this).addClass('active').siblings().removeClass('active')
             $elDiv.eq(num).addClass('active').siblings().removeClass('active')
         })
 
-        $('.gallery .text a').on('mouseover', function () {
-            let alt2 = `../CGV/img/`
-            alt2 += $(this).find('strong').text();
-            alt2 += `.png`
-            console.log(alt2)
-
-            $('.image img').attr({
-                src: alt2
-
-            })
-            alt2 = ""
+        $(document).on('click', '.sect-city2 a', function(){
+            let theaterImage = $(this).attr('href')
+            let theaterName = $(this).text()
+            $('.image').attr('src', theaterImage)
+            $('.theater-tit span').text(theaterName)
+            return false
         })
+
+  
+        
+
+
     </script>
 
 </body>
