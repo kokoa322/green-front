@@ -1,10 +1,13 @@
 @charset "utf-8";
+
+
+
 .header {
   position: relative;
   z-index: 101;
 }
 .header .contents {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 .header_content {

@@ -18,9 +18,15 @@
 
       ul { list-style: none;}
       .nav_menu {position: relative; }
-      .nav_overMenu { width: 200px ; height: 350px;}
-      .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.7s;}
-      .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -100; border-bottom: 1px solid black;}
+      .nav_overMenu { width: 150px ; height: 350px; }
+      .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.8s;}
+      .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -1; }
+      .empty_space {width: 99.7vw; height: 300px; background-color: white; position: absolute; left: -50%; border-bottom: 1px solid grey; bottom: 100%; z-index: -2;} 
+      .nav_menu:hover .empty_space { bottom: -943%; transition: all 0.7s;}
+      
+ 
+
+
     
     </style>
     
@@ -100,23 +106,23 @@
           </h1>
           <ul class="nav_menu">
             <li>
-              <h2><a href="./movieList.html">영화</a></h2>
+              <h2><a href="./movieList.html" >영화</a></h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2>
-                    <a href="./movieList.html" tabindex="-1">영화</a>
+                  <h2 style="color: black; font-weight: bold;">
+                    영화
                   </h2>
                 </dt>
                 <dd>
-                  <h3><a href="/movies/?lt=1&amp;ft=0">무비차트</a></h3>
+                  <h3><a href="./movieList.html">무비차트</a></h3>
                 </dd>
                 <dd>
-                  <h3><a href="/arthouse/">아트하우스</a></h3>
+                  <h3><a href="./movieList.html">아트하우스</a></h3>
                 </dd>
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/event/detailViewUnited.aspx?seq=30717"
+                      href="./movieList.html"
                       >ICECON
                     </a>
                   </h3>
@@ -127,14 +133,14 @@
               <h2><a href="./theaters.html">극장</a></h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2><a href="/theaters/" tabindex="-1">극장</a></h2>
+                  <h2 style="color: black; font-weight: bold;">극장</h2>
                 </dt>
                 <dd>
-                  <h3><a href="/theaters/">CGV 극장</a></h3>
+                  <h3><a href="./theaters.html">CGV 극장</a></h3>
                 </dd>
                 <dd>
                   <h3>
-                    <a href="/theaters/special/defaultNew.aspx">특별관</a>
+                    <a href="./theaters.html">특별관</a>
                   </h3>
                 </dd>
               </dl>
@@ -145,7 +151,7 @@
               </h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2><a href="/ticket/" tabindex="-1">예매</a></h2>
+                  <h2 style="color: black; font-weight: bold;">예매</h2>
                 </dt>
                 <dd>
                   <h3><a href="/ticket/">빠른예매</a></h3>
@@ -170,16 +176,14 @@
               <dl class="nav_overMenu" style="">
                 <dt>
                   <h2>
-                    <a href="/culture-event/popcorn-store/" tabindex="-1"
-                      >스토어</a
-                    >
+                    <h2 style="color: black; font-weight: bold;">스토어
                   </h2>
                 </dt>
 
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=1"
+                      href="./store.html"
                       >패키지</a
                     >
                   </h3>
@@ -188,7 +192,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2"
+                      href="./store.html"
                       >영화관람권</a
                     >
                   </h3>
@@ -197,7 +201,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3"
+                      href="./store.html"
                       >기프트카드</a
                     >
                   </h3>
@@ -206,7 +210,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4"
+                      href="./store.html"
                       >콤보</a
                     >
                   </h3>
@@ -215,7 +219,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5"
+                      href="./store.html"
                       >팝콘</a
                     >
                   </h3>
@@ -224,7 +228,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6"
+                      href="./store.html"
                       >음료</a
                     >
                   </h3>
@@ -233,7 +237,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7"
+                      href="./store.html"
                       >스낵</a
                     >
                   </h3>
@@ -242,7 +246,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10"
+                      href="./store.html"
                       >플레이존</a
                     >
                   </h3>
@@ -268,12 +272,7 @@
               <dl class="nav_overMenu" style="">
                 <dt>
                   <h2>
-                    <a
-                      href="/culture-event/event/defaultNew.aspx?mCode=001"
-                      tabindex="-1"
-                      >이벤트</a
-                    >
-                  </h2>
+                    <h2 style="color: black; font-weight: bold;">이벤트</h2>
                 </dt>
                 <dd>
                   <h3>
@@ -330,8 +329,7 @@
               </h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2>
-                    <a href="/discount/discountlist.aspx" tabindex="-1">혜택</a>
+                  <h2 style="color: black; font-weight: bold;">혜택
                   </h2>
                 </dt>
                 <dd>
@@ -352,6 +350,7 @@
                 </dd>
               </dl>
             </li>
+            <div class="empty_space"></div>
           </ul>
         </div>
       </div>
