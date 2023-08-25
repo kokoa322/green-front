@@ -1644,9 +1644,7 @@
     scroll no-repeat;
   z-index: 3;
 }
-.category_product_inner_list li:hover .btn_category_product_gift:hover {
-  background-position: -209px -1px;
-}
+
 .category_product_inner_list li:hover .btn_category_product_buy {
   left: 335px;
   background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px

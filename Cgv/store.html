@@ -97,7 +97,7 @@
                   ></strong
                 >
                 <ul class="category_product_inner_list">
-                  <li class="">
+                  <li class="storeDetail">
                     <a href="./storeDetail.html" class="btn_category_product">
                       <span class="best_product_img_wrap"
                         ><img
@@ -136,8 +136,8 @@
                       >3</a
                     >
                   </li>
-                  <li class=" ">
-                    <a href="./storeDetail.html" class="btn_category_product">
+                  <li class="storeDetail">
+                    <a href="javascript:;" class="btn_category_product">
                       <span class="best_product_img_wrap"
                         ><img
                           src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16778218049340.jpg"
@@ -152,26 +152,8 @@
                         </span>
                       </span>
                     </a>
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('1', '100344', '0', ''); return false;"
-                      class="btn_category_product_cart"
-                      >1</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('2', '100344', '0', '1'); return false;"
-                      class="btn_category_product_gift"
-                      >2</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('3', '100344', '0', '1'); return false;"
-                      class="btn_category_product_buy"
-                      >3</a
-                    >
                   </li>
-                  <li class="">
+                  <li class="storeDetail">
                     <a
                       href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100343"
                       class="btn_category_product"
@@ -211,7 +193,7 @@
                       >3</a
                     >
                   </li>
-                  <li class=" ">
+                  <li class="storeDetail">
                     <a
                       href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100342"
                       class="btn_category_product"
@@ -544,6 +526,28 @@
         </div>
       </div>
     </div>
+    <script>
+      $("body").on(
+        "click",
+        ".storeDetail .btn_category_product .best_product_img_wrap ",
+        function () {
+          let target = $(this).find("img").attr("alt");
+          let info = "";
+          $.ajax({
+            type: "GET",
+            url: "./json/storeData.json",
+            dataType: "json",
+            success: function (response) {
+              info = response.store;
+              $(location).attr("href", `./storeDetail.html?target=${target}`);
+            },
+            error: function (xhr) {
+              alert(xhr.status + "/" + xhr.errorText);
+            },
+          });
+        }
+      );
+    </script>
     <script>
       $("header").load("header.html");
     </script>

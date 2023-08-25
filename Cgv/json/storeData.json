@@ -1,0 +1,20 @@
+{
+  "store": [
+    {
+      "name": "우리 패키지",
+      "productComposition": "일반 영화 관람권 4매+더블콤보 1개",
+      "expirationPeriod": "CGV 영화관람권 : 구매일로부터 24개월 이내 더블콤보 : 구매일로부터 6개월 이내",
+      "price": 61000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16778218053400.jpg"
+    },
+    {
+      "name": "우리 패키지1",
+      "productComposition": "일반 영화 관람권 4매+더블콤보 1개",
+      "expirationPeriod": "CGV 영화관람권 : 구매일로부터 24개월 이내 더블콤보 : 구매일로부터 6개월 이내",
+      "price": 61000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217720_1024.jpg"
+    }
+  ]
+}
