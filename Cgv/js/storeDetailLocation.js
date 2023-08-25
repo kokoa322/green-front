@@ -130,14 +130,18 @@ $.ajax({
                   <span class="com_form_count com_form_count0">1</span>
                   <a href="#none" class="com_btn_plus">+</a>
                   <span class="com_total_price" id="spantotalprice"
-                    >61,000</span
+                    >${price
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span
                   >
                 </div>
                 <div class="category_product_detail_total_price">
                   <p class="com_form_total_price">
                     총 구매금액<span
                       class="com_total_price0 com_product_total_price"
-                      >61,000</span
+                      >${price
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span
                     >
                   </p>
                 </div>
