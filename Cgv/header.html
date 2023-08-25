@@ -17,10 +17,15 @@
     <style>
 
       ul { list-style: none;}
+      .contents {position: relative;}
       .nav_menu {position: relative; }
-      .nav_overMenu { width: 200px ; height: 350px;}
-      .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.7s;}
-      .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -100; border-bottom: 1px solid black;}
+      .nav_overMenu { width: 150px ; height: 350px; }
+      .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.8s;}
+      .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -1; }
+      .empty_space {width: 250%; height: 500px; background-color: white; position: absolute;  bottom: 100%; z-index: -2;} 
+      .nav_menu:hover .empty_space { bottom: -943%; transition: all 0.7s;}
+
+
     
     </style>
     
@@ -30,7 +35,7 @@
     <div class="header">
       <div class="header_content">
         <div class="contents">
-          <h1 onclick="" id="indexLogo">
+          <h1 onclick="" id="indexLogo" style="min-width: 300px;">
             <a href="./index.html">
               <img src="./img/CGV.png" alt="CGV" />
             </a>
@@ -100,23 +105,23 @@
           </h1>
           <ul class="nav_menu">
             <li>
-              <h2><a href="./movieList.html">영화</a></h2>
+              <h2><a href="./movieList.html" >영화</a></h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2>
-                    <a href="./movieList.html" tabindex="-1">영화</a>
+                  <h2 style="color: black; font-weight: bold;">
+                    영화
                   </h2>
                 </dt>
                 <dd>
-                  <h3><a href="/movies/?lt=1&amp;ft=0">무비차트</a></h3>
+                  <h3><a href="./movieList.html">무비차트</a></h3>
                 </dd>
                 <dd>
-                  <h3><a href="/arthouse/">아트하우스</a></h3>
+                  <h3><a href="./movieList.html">아트하우스</a></h3>
                 </dd>
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/event/detailViewUnited.aspx?seq=30717"
+                      href="./movieList.html"
                       >ICECON
                     </a>
                   </h3>
@@ -127,40 +132,40 @@
               <h2><a href="./theaters.html">극장</a></h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2><a href="/theaters/" tabindex="-1">극장</a></h2>
+                  <h2 style="color: black; font-weight: bold;">극장</h2>
                 </dt>
                 <dd>
-                  <h3><a href="/theaters/">CGV 극장</a></h3>
+                  <h3><a href="./theaters.html">CGV 극장</a></h3>
                 </dd>
                 <dd>
                   <h3>
-                    <a href="/theaters/special/defaultNew.aspx">특별관</a>
+                    <a href="./theaters.html">특별관</a>
                   </h3>
                 </dd>
               </dl>
             </li>
             <li>
               <h2>
-                <a href="/ticket/"><strong>예매</strong></a>
+                <a href="./index.html"><strong>예매</strong></a>
               </h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2><a href="/ticket/" tabindex="-1">예매</a></h2>
+                  <h2 style="color: black; font-weight: bold;">예매</h2>
                 </dt>
                 <dd>
-                  <h3><a href="/ticket/">빠른예매</a></h3>
+                  <h3><a href="#">빠른예매</a></h3>
                 </dd>
                 <dd>
-                  <h3><a href="/reserve/show-times/">상영스케줄</a></h3>
+                  <h3><a href="#">상영스케줄</a></h3>
                 </dd>
                 <dd>
                   <h3>
-                    <a href="/ticket/eng/newdefault.aspx">English Ticketing</a>
+                    <a href="#">English Ticketing</a>
                   </h3>
                 </dd>
                 <dd>
                   <h3>
-                    <a href="/reserve/show-times/eng/">English Schedule</a>
+                    <a href="#">English Schedule</a>
                   </h3>
                 </dd>
               </dl>
@@ -170,16 +175,14 @@
               <dl class="nav_overMenu" style="">
                 <dt>
                   <h2>
-                    <a href="/culture-event/popcorn-store/" tabindex="-1"
-                      >스토어</a
-                    >
+                    <h2 style="color: black; font-weight: bold;">스토어
                   </h2>
                 </dt>
 
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=1"
+                      href="./store.html"
                       >패키지</a
                     >
                   </h3>
@@ -188,7 +191,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=2"
+                      href="./store.html"
                       >영화관람권</a
                     >
                   </h3>
@@ -197,7 +200,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=3"
+                      href="./store.html"
                       >기프트카드</a
                     >
                   </h3>
@@ -206,7 +209,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=4"
+                      href="./store.html"
                       >콤보</a
                     >
                   </h3>
@@ -215,7 +218,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=5"
+                      href="./store.html"
                       >팝콘</a
                     >
                   </h3>
@@ -224,7 +227,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6"
+                      href="./store.html"
                       >음료</a
                     >
                   </h3>
@@ -233,7 +236,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7"
+                      href="./store.html"
                       >스낵</a
                     >
                   </h3>
@@ -242,7 +245,7 @@
                 <dd>
                   <h3>
                     <a
-                      href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=10"
+                      href="./store.html"
                       >플레이존</a
                     >
                   </h3>
@@ -268,12 +271,7 @@
               <dl class="nav_overMenu" style="">
                 <dt>
                   <h2>
-                    <a
-                      href="/culture-event/event/defaultNew.aspx?mCode=001"
-                      tabindex="-1"
-                      >이벤트</a
-                    >
-                  </h2>
+                    <h2 style="color: black; font-weight: bold;">이벤트</h2>
                 </dt>
                 <dd>
                   <h3>
@@ -324,14 +322,13 @@
                 </dd>
               </dl>
             </li>
-            <li>
+            <!-- <li>
               <h2 onclick="gaEventLog('PC_GNB','주메뉴_해택','')">
                 <a href="/discount/discountlist.aspx">혜택</a>
               </h2>
               <dl class="nav_overMenu" style="">
                 <dt>
-                  <h2>
-                    <a href="/discount/discountlist.aspx" tabindex="-1">혜택</a>
+                  <h2 style="color: black; font-weight: bold;">혜택
                   </h2>
                 </dt>
                 <dd>
@@ -351,7 +348,8 @@
                   <h3><a href="/user/vip-lounge/">VIP 라운지</a></h3>
                 </dd>
               </dl>
-            </li>
+            </li> -->
+            <div class="empty_space"></div>
           </ul>
         </div>
       </div>
