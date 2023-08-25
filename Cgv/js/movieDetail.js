@@ -1559,7 +1559,8 @@ $.ajax({
     <script>
       $("header").load("header.html");
     </script>
-    <script src ="./js/storeDetailUtil"></script>`);
+
+`);
   },
   error(xhr) {
     alert(xhr.status + "/" + xhr.errorText);
