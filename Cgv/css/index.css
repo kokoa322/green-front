@@ -278,18 +278,33 @@ body {
 
 /* 푸터 */
 #footer {
-  background: #f8f8f8;
-  padding: 30px 0px;
-  text-align: center;
-  font-size: 12px;
-  line-height: 18px;
-  color: #666;
+  min-width: 1040px;
+  padding: 0 0 14px;
+  background-color: #f8f8f8;
 }
 
-#footer .info {
+#footer .policy_info{
+  margin: 0px 30px;
+  font-size: 13px;
+}
+
+#footer .policy_info .policy_list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  padding: 23px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+#footer .policy_info .policy_list strong{
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#footer .company_info {
   padding: 20px 0;
 }
-#footer .info p {
+#footer .company_info p {
   padding: 5px 20px;
   text-align: left;
 }

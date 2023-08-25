@@ -23,8 +23,8 @@
     ></script>
     <!-- 홈페이지 CSS 일원화로 인한 반영 20220721 -->
   </head>
-  <header></header>
   <body class="" style="">
+    <header></header>
     <div class="skipnaiv">
       <a href="#contents" id="skipHeader">메인 컨텐츠 바로가기</a>
     </div>
@@ -280,8 +280,11 @@
         </div>
       </div>
     </div>
+    <footer id="footer"></footer>
+
     <script>
       $("header").load("header.html");
+      $("footer").load("footer.html");
 
       $("body").on("click", ".com_btn_plus", function () {
         // $(".qty__input").val() = input 상자에 입력된 값 문자로 추출(parseInt로 묶으면 문자는 무시하고 숫자로 변환해줌)
