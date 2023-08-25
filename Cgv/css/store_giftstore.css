@@ -7,7 +7,7 @@
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #cacaca;
-  z-index: 101;
+  z-index: -10;
 }
 .category_wrap.fixed_top {
   position: fixed;
@@ -64,11 +64,11 @@
   padding-left: 4px;
   padding-right: 18px;
   background-color: #fff;
-  z-index: 2;
+  z-index: -9;
 }
 .category_content li.giftstore_logo + li {
   padding-left: 0;
-  z-index: 1;
+  z-index: -8;
 }
 .category_content li.giftstore_logo a {
   display: block;
