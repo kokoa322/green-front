@@ -175,24 +175,8 @@
     <script>
         $("header").load("header.html");        
         $("footer").load("footer.html");
-
-        // 제이쿼리
-        let $elFam = $('#footer .fam')
-        let $elLi = $('.article5 .cs_board .tabmenu > li')
-        let $elDiv = $('.article5 .cs_board .contents > div')
-
-        $elFam.on('click', function () {
-            //$(this).toggleClass('active')
-            $(this).find('ul').slideToggle()//슬라이드
-            // $(this).children('ul').slideToggle()
-        })
-
-        $elLi.on('click', function () {
-            let num = $(this).index()
-            $(this).addClass('active').siblings().removeClass('active')
-            $elDiv.eq(num).addClass('active').siblings().removeClass('active')
-        })
-
+    </script>
+    <script>
         $('.gallery .text a').on('mouseover', function () {
             let alt2 = `../CGV/img/`
             alt2 += $(this).find('strong').text();
