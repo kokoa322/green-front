@@ -1,412 +1,32 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
-    />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/rwdcommon.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/index_set.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/index_layout.css"
-    />
+$.ajax({
+  type: "GET",
+  url: "./json/movieData.json",
+  dataType: "json",
+  success(movieInfo) {
+    console.log(movieInfo.movie);
+    //해당하는 영화의 정보들
+    const {
+      name,
+      director,
+      actors,
+      price,
+      genre,
+      sating,
+      showtime,
+      mainSummary,
+      summary,
+      releaseDate,
+      reservationRate,
+    } = movieInfo.movie[0];
 
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_set.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_layout.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_module.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_search.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/index_set.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/eggupdate.css"
-    />
+    const [img1, img2, img3, img4] = movieInfo.movie[0].image;
 
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="css/detail_preegg.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!--[if lte IE 9
-      ]><script
-        type="text/javascript"
-        src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.placeholder.js"
-      ></script
-    ><![endif]-->
+    const [coment1, coment2, coment3, coment4, coment5, coment6] =
+      movieInfo.movie[0].coments;
 
-    <script
-      type="text/javascript"
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-SSGE1ZCJKG&amp;cx=c&amp;_slc=1"
-    ></script>
-    <script
-      type="text/javascript"
-      async=""
-      src="http://www.googletagmanager.com/gtag/js?id=G-559DE9WSKZ&amp;l=dataLayer&amp;cx=c"
-    ></script>
-    <script
-      type="text/javascript"
-      async=""
-      src="http://www.google-analytics.com/analytics.js"
-    ></script>
-    <script
-      async=""
-      src="//www.googletagmanager.com/gtm.js?id=GTM-NNNFR3"
-    ></script>
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript" src="/common/js/extraTheaters.js"></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/app.config.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery-1.10.2.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.tmpl.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.validate.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.paging.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.ui/jquery-ui-1.10.4.custom.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.utils.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/app.utils.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.utils.pageing.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/app.init.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.dotdotdot.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/silverlight_link.js"
-    ></script>
-    <script
-      src="https://img.cgv.co.kr/R2014/js/slick/slick.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/css/phototicket/phototicket.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/css/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/css/slick-theme-custom.css"
-    />
-
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/icheck/login.timer.js"
-    ></script>
-    <script
-      src="https://img.cgv.co.kr/R2014/js/icheck/icheck.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/js/icheck/iCheck.css"
-    />
-
-    <!-- 2020.05.07 감정지수/프리에그 프로젝트 추가 -->
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/css/preegg.css"
-    />
-
-    <!-- 2023.03.27 홈페이지 스토어 영역 內 배너 영역 미노출의 件 -->
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/giftstore/giftstore.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/giftstore/commonstore.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      media="all"
-      type="text/css"
-      href="https://img.cgv.co.kr/R2014/css/giftstore/giftstore.css"
-    />
-
-    <!-- 홈페이지 CSS 일원화로 인한 반영 20220721 -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://img.cgv.co.kr/resource_pc/css/cgv.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/resource_pc/js/cgvUi.js"
-    ></script>
-
-    <!-- 각페이지 Header Start-->
-
-    <!--[if lte IE 8
-      ]><script
-        language="javascript"
-        type="text/javascript"
-        src="https://img.cgv.co.kr/R2014/js/excanvas.min.js"
-      ></script
-    ><![endif]-->
-    <link
-      href="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jquery.jqplot.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jquery.jqplot.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jqplot.barRenderer.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jqplot.pieRenderer.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jqplot.donutRenderer.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jqplot.categoryAxisRenderer.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/jquery.plugin/jquery.jqplot/jqplot.pointLabels.min.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/Chart.custom.js"
-    ></script>
-    <!-- 평점 개편 스파이더 차트 js 로딩 추가. mwpark_RR2015 -->
-
-    <!-- 2020.05.07 영화 상세 차트 js 로딩 추가 -->
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/amcharts.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://img.cgv.co.kr/R2014/js/radar.js"
-    ></script>
-
-    <!--/각페이지 Header End-->
-    <script type="text/javascript">
-      //<![CDATA[
-      _TRK_CP = "/영화/영화상세";
-
-      app
-        .config("staticDomain", "https://img.cgv.co.kr/R2014/")
-        .config("imageDomain", "https://img.cgv.co.kr")
-        .config("isLogin", "False");
-
-      // AD FLOAT
-      // 암호화 할 문자열과 키값(상수값)을 매개변수로 받는다.
-      function EncryptAD(str, key) {
-        output = new String();
-        Temp = new Array();
-        TextSize = str.length;
-        for (i = 0; i < TextSize; i++) {
-          // key 값을 원하는 대로 연산을 한다
-          output += String.fromCharCode(
-            str.charCodeAt(i) + parseInt(key) + 123 + i
-          );
-        }
-        return output;
-      }
-      // 복호화
-      // 암호화 된 문자열과 키값(상수값)을 매개변수로 받는다.
-      function DecryptAD(str, key) {
-        output = new String();
-        Temp = new Array();
-        TextSize = str.length;
-        for (i = 0; i < TextSize; i++) {
-          // 암호화시 사용한 연산과 같아야 한다.
-          output += String.fromCharCode(
-            str.charCodeAt(i) - (parseInt(key) + 123 + i)
-          );
-        }
-
-        return output;
-      }
-
-      function getCookieVal(offset) {
-        var endstr = document.cookie.indexOf(";", offset);
-        if (endstr == -1) endstr = document.cookie.length;
-        return unescape(document.cookie.substring(offset, endstr));
-      }
-      function GetCookieAd(name) {
-        var arg = name + "=";
-        var alen = arg.length;
-        var clen = document.cookie.length;
-        var i = 0;
-        while (i < clen) {
-          //while open
-          var j = i + alen;
-          if (document.cookie.substring(i, j) == arg) return getCookieVal(j);
-          i = document.cookie.indexOf(" ", i) + 1;
-          if (i == 0) break;
-        } //while close
-        return null;
-      }
-      function setCookieAD(name, value, expiredays) {
-        var todayDate = new Date();
-        todayDate.setTime(
-          todayDate.getTime() + expiredays * 24 * 60 * 60 * 1000
-        );
-        document.cookie =
-          name +
-          "=" +
-          escape(value) +
-          "; expires=" +
-          todayDate.toGMTString() +
-          "; path=/; domain=cgv.co.kr";
-      }
-      function CloseAD() {
-        var AdUrl = window.location.href;
-        var ArrAdUrl = AdUrl.split("/");
-
-        var CurCookieName = "CgvPopAd-" + ArrAdUrl[3];
-        var CurCookieUrl = GetCookieAd(CurCookieName);
-        var CookieUrl = ArrAdUrl[3];
-
-        CookieUrl = EncryptAD(CookieUrl, "15442280");
-        setCookieAD(CurCookieName, CookieUrl, "1");
-        $(document).find("#ad_float1").hide();
-      }
-      function OpenAD() {
-        var AdUrl = window.location.href;
-        var ArrAdUrl = AdUrl.split("/");
-        var CookieUrl = ArrAdUrl[3];
-        var CurCookieName = "CgvPopAd-" + ArrAdUrl[3];
-        var CurCookieUrl = GetCookieAd(CurCookieName);
-
-        if (CurCookieUrl == null) {
-          CurCookieUrl = "";
-        } else {
-          CurCookieUrl = DecryptAD(CurCookieUrl, "15442280");
-        }
-
-        if (CurCookieUrl.indexOf(CookieUrl) != -1) {
-          $(document).find("#ad_float1").hide();
-        }
-
-        //section.cgv.co.kr 매거진 체크
-        var magazineckurl = GetCookieAd("CgvPopAd-magazine");
-        if (magazineckurl != null) {
-          var magazineck = DecryptAD(magazineckurl, "15442280");
-          if (magazineck != null && magazineck == "magazine") {
-            //값이있는경우 표시하지않음
-            $(document).find("#ad_float1").hide();
-          }
-        }
-      }
-    </script>
-  </head>
-  <body>
+    $("body").append(`
+      <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
     <header></header>
-
-    <div class="skipnaiv">
-      <a href="#contents" id="skipHeader">메인 컨텐츠 바로가기</a>
-    </div>
     <div id="cgvwrap">
       <div id="contaniner" class="">
         <div id="contents" class="">
@@ -432,68 +52,38 @@
               </div>
               <div class="box-contents">
                 <div class="title">
-                  <strong>오펜하이머</strong>
+                  <strong>${name}</strong>
                   <em class="round lightblue"><span>현재상영중</span></em>
 
                   <p>Oppenheimer</p>
                 </div>
                 <div class="score">
                   <strong class="percent"
-                    >예매율&nbsp;<span>63.4%</span></strong
+                    >예매율&nbsp;<span>${reservationRate}</span></strong
                   >
-                  <div class="egg-gage small">
-                    <span class="egg great"></span>
-                    <span class="percent">92%</span>
-                  </div>
                 </div>
                 <div class="spec">
                   <dl>
-                    <dt>감독 :&nbsp;</dt>
+                    <dt>감독 :&nbsp;${director}</dt>
                     <dd>
-                      <a href="/movies/persons/?pidx=11015">크리스토퍼 놀란</a>
+                      <a href="/movies/persons/?pidx=11015"></a>
                     </dd>
 
                     <dd></dd>
 
                     <dt>&nbsp;/ 배우 :&nbsp;</dt>
                     <dd class="on">
-                      <a href="/movies/persons/?pidx=27249">킬리언 머피</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=106493">에밀리 블런트</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=571">맷 데이먼</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=892"
-                        >로버트 다우니 주니어</a
-                      >
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=116288">플로렌스 퓨</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=10568">조쉬 하트넷</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=11676">케이시 애플렉</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=118320">라미 말렉</a>
-
-                      ,&nbsp;
-                      <a href="/movies/persons/?pidx=436">케네스 브래너</a>
+                      ${actors}
                     </dd>
 
-                    <dt>장르 :&nbsp;스릴러,&nbsp;드라마</dt>
+                    <dt>장르 :&nbsp;${genre}</dt>
                     <dd></dd>
                     <dt>&nbsp;/ 기본 정보 :&nbsp;</dt>
                     <dd class="on">
-                      15세이상관람가,&nbsp;180분,&nbsp;미국, 영국
+                      ${sating},&nbsp;${showtime}
                     </dd>
                     <dt>개봉 :&nbsp;</dt>
-                    <dd class="on">2023.08.15</dd>
+                    <dd class="on">${releaseDate}</dd>
                   </dl>
                 </div>
                 <span class="like">
@@ -565,10 +155,9 @@
                 <!-- 메뉴가 선택되면 a 에 title="선택" 이라고 넣는다 -->
 
                 <div class="sect-story-movie">
-                  <strong>“나는 이제 죽음이요, 세상의 파괴자가 되었다.”</strong
+                  <strong>${mainSummary}</strong
                   ><br />
-                  세상을 구하기 위해 세상을 파괴할 지도 모르는 선택을 해야 하는
-                  천재 과학자의 핵개발 프로젝트.
+                  ${summary}
                 </div>
                 <!-- .sect-staff -->
                 <div
@@ -599,7 +188,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217720_1024.jpg"
+                              src="${img1}"
                               alt="[오펜하이머]5분 하이라이트 영상"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -634,7 +223,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217600_1024.jpg"
+                              src="${img2}"
                               alt="[오펜하이머]세상을 바꾼 사람들"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -669,7 +258,7 @@
                         >
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217533_1024.jpg"
+                              src="${img3}"
                               alt="[오펜하이머]세상을 바꾼 순간"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -754,10 +343,10 @@
                       <div class="item-wrap on">
                         <div class="item" style="width: 122%; height: 450px">
                           <img
-                            data-src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg"
+                            data-src="${img4}"
                             alt="오펜하이머"
                             onerror="errorImage(this)"
-                            src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg"
+                            src="${img4}"
                             style="width: 100%; margin-bottom: 200px"
                           />
                         </div>
@@ -1292,10 +881,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>jb**525
+                              <span class="egg-icon good"></span>${coment1.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment1.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702102"
@@ -1347,8 +936,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            영화가 전하고 싶은 내용이 뭔지 확실히 전달되는
-                            느낌이었어요
+                          ${coment1.coment}
                           </p>
                         </div>
                       </li>
@@ -1366,7 +954,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment1.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1379,10 +967,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>se**3538
+                              <span class="egg-icon good"></span>${coment2.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment2.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702100"
@@ -1433,7 +1021,7 @@
                           </ul>
                         </div>
                         <div class="box-comment">
-                          <p>오펜하이머를 향한 놀란의 러브레터</p>
+                          <p>${coment2.coment}</p>
                         </div>
                       </li>
                       <li
@@ -1450,7 +1038,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/MyCGV/Profile/2017/0808/shinsland_053751_M.jpg"
+                              src="${coment2.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1461,10 +1049,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>테디신이
+                              <span class="egg-icon good"></span>${coment2.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment2.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702099"
@@ -1516,8 +1104,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            한 편의 전기문을 영화로 본 느낌! 역시 놀란의 작품은
-                            놀라워.
+                            ${coment3.coment}
                           </p>
                         </div>
                       </li>
@@ -1535,7 +1122,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment3.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1548,10 +1135,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>mo**oo
+                              <span class="egg-icon good"></span>${coment4.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment4.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702090"
@@ -1619,7 +1206,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="https://img.cgv.co.kr/MyCGV/Profile/2022/0101/loveji6568_113509_M.jpg"
+                              src="${coment4.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1630,10 +1217,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>썸머파티
+                              <span class="egg-icon good"></span>${coment5.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment5.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702082"
@@ -1685,9 +1272,7 @@
                         </div>
                         <div class="box-comment">
                           <p>
-                            배우들의 연기는 너무너무 좋았어요. 그러나 방대한
-                            대화량에 조금씩 지쳐 살짝 졸리고 했지만 영화자체는
-                            굉장히 좋았어요.
+                          ${coment5.coment}
                           </p>
                         </div>
                       </li>
@@ -1705,7 +1290,7 @@
                         <div class="box-image">
                           <span class="thumb-image">
                             <img
-                              src="http://img.cgv.co.kr/R2014/images/common/default_profile.gif"
+                              src="${coment5.profileImage}"
                               alt="사용자 프로필"
                               onerror="errorImage(this, {'type':'profile'})"
                             />
@@ -1716,10 +1301,10 @@
                         <div class="box-contents">
                           <ul class="writerinfo">
                             <li class="writer-name">
-                              <span class="egg-icon good"></span>xz**d99
+                              <span class="egg-icon good"></span>${coment6.id}
                             </li>
                             <li class="writer-etc">
-                              <span class="day">2023.08.18</span>
+                              <span class="day">${coment6.date}</span>
                               <span
                                 class="like point_like"
                                 id="34702077"
@@ -1971,12 +1556,13 @@
         </div>
       </div>
     </div>
-    <footer id="footer"></footer>
-
     <script>
       $("header").load("header.html");
-      $("footer").load("footer.html");
-
     </script>
-  </body>
-</html>
+
+`);
+  },
+  error(xhr) {
+    alert(xhr.status + "/" + xhr.errorText);
+  },
+});
