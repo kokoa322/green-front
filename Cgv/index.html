@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" type="text/css" href="https://img.cgv.co.kr/R2014/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://img.cgv.co.kr/R2014/images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
@@ -26,11 +27,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
         integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/swiper.min.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header class="index_header"></header>
         <section id="section">
+            <!-- <div id="test22"></div> -->
             <article class="article1 row">
                 <h2 class="moviechart">무비차트</h2>
                 <ul>
@@ -161,10 +164,6 @@
                     <p>QR코드를 스캔하고<br>앱설치 페이지로 바로 이동하세요</p>
                 </div>
             </article>
-
-
-
-
         </section>
 
         <footer id="footer">
@@ -186,7 +185,7 @@
 
     <script src="./js/common.js"></script>
     <script src="./js/index.js"></script>
-
+    <script>$('#test22').load("./test1.html")</script>
     <script>
         $("header").load("header.html");
         // 제이쿼리
@@ -214,7 +213,6 @@
             
             $('.image img').attr({
                 src : alt2
-
             })
             alt2=""
         })
