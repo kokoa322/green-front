@@ -1,0 +1,363 @@
+<header>
+  <head>
+    <link
+      rel="stylesheet"
+      media="all"
+      type="text/css"
+      href="css/header_search.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      type="text/css"
+      href="css/header_layout.css"
+    />
+
+    <style>
+
+      ul { list-style: none;}
+      .contents {position: relative;}
+      .nav_menu {position: relative; }
+      .nav_overMenu { width: 150px ; height: 350px; }
+      .nav_menu:hover .nav_overMenu { top: 100%; transition: all 0.8s;}
+      .nav_overMenu {position: absolute; top: -900%; background: white; z-index: -1; }
+      .empty_space {width: 250%; height: 500px; background-color: white; position: absolute;  bottom: 100%; z-index: -2;} 
+      .nav_menu:hover .empty_space { bottom: -943%; transition: all 0.7s;}
+
+
+    
+    </style>
+    
+  </head>
+
+  <div id="cgvwrap">
+    <div class="header">
+      <div class="header_content">
+        <div class="contents">
+          <h1 onclick="" id="indexLogo" style="min-width: 300px;">
+            <a href="./index.html">
+              <img src="./img/CGV.png" alt="CGV" />
+            </a>
+            <span>GREENFPLEX</span>
+          </h1>
+          <div class="area_search" role="search">
+            <fieldset style="margin-top: 50px">
+              <legend>통합검색 입력</legend>
+              <div id="acWrap" class="home" onmouseover="ac_LoadByNateMain();">
+                <input
+                  class="type_text"
+                  id="q"
+                  name="q"
+                  value=""
+                  autocomplete="off"
+                  type="text"
+                  style="ime-mode: active"
+                  onkeydown="return checkSearchQEnter(event)"
+                  onmousedown="clickSearchKeywordAd()"
+                  placeholder="greenCGV"
+                />
+                <input id="acBtn" title="검색" class="type_btn" type="submit" />
+              </div>
+            </fieldset>
+          </div>
+          <ul class="memberInfo_wrap">
+            <li>
+              <a href="./login.html">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png"
+                  alt="로그인"
+                />
+                <span>로그인</span>
+              </a>
+            </li>
+            <li>
+              <a href="./join.html">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png"
+                  alt="회원가입"
+                />
+                <span>회원가입</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png"
+                  alt="MY CGV"
+                />
+                <span>MY CGV</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="contents">
+          <h1>
+            <a href="/" tabindex="-1">
+              <img
+                src="https://img.cgv.co.kr/R2014/images/common/logo/logoWhite.png"
+                alt="CGV"
+              />
+            </a>
+          </h1>
+          <ul class="nav_menu">
+            <li>
+              <!-- <h2><a href="./movieList.html" >영화</a></h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2 style="color: black; font-weight: bold;">
+                    영화 -->
+              <h2><a href="./movieList.html">영화</a></h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                    <h2>
+                    <a href="#" tabindex="-1">영화</a>
+                  </h2>
+                </dt>
+                <dd>
+                  <h3><a href="./movieList.html">무비차트</a></h3>
+                </dd>
+                <dd>
+                  <h3><a href="./movieList.html">아트하우스</a></h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a
+                      href="./movieList.html"
+                      >ICECON
+                    </a>
+                  </h3>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h2><a href="./theaters.html">극장</a></h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2 style="color: black; font-weight: bold;">극장</h2>
+                </dt>
+                <dd>
+                  <h3><a href="./theaters.html">CGV 극장</a></h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="./theaters.html">특별관</a>
+                  </h3>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h2>
+                <a href="./index.html"><strong>예매</strong></a>
+              </h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2 style="color: black; font-weight: bold;">예매</h2>
+                </dt>
+                <dd>
+                  <h3><a href="#">빠른예매</a></h3>
+                </dd>
+                <dd>
+                  <h3><a href="#">상영스케줄</a></h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="#">English Ticketing</a>
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="#">English Schedule</a>
+                  </h3>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h2><a href="./store.html">스토어</a></h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2>
+                    <h2 style="color: black; font-weight: bold;">스토어
+                  </h2>
+                </dt>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >패키지</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >영화관람권</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >기프트카드</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >콤보</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >팝콘</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >음료</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >스낵</a
+                    >
+                  </h3>
+                </dd>
+
+                <dd>
+                  <h3>
+                    <a
+                      href="./store.html"
+                      >플레이존</a
+                    >
+                  </h3>
+                </dd>
+
+                <!-- 2023.05.15 씨네샵 URL 변경 요청 -->
+                <dd>
+                  <h3>
+                    <a
+                      href="https://www.cineshop.co.kr"
+                      class="arrowR"
+                      target="_blank"
+                      >씨네샵</a
+                    >
+                  </h3>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h2 onclick="gaEventLog('PC_GNB','주메뉴_이벤트','')">
+                <a href="event.html">이벤트</a>
+              </h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2>
+                    <h2 style="color: black; font-weight: bold;">이벤트</h2>
+                </dt>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/defaultNew.aspx?mCode=001"
+                      >SPECIAL</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/defaultNew.aspx?mCode=004"
+                      >영화/예매</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/defaultNew.aspx?mCode=008"
+                      >멤버십/CLUB</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/defaultNew.aspx?mCode=005"
+                      >CGV 극장별</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/defaultNew.aspx?mCode=006"
+                      >제휴할인</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/user/mycgv/event/result_list.aspx">당첨자 발표</a>
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a href="/culture-event/event/end-list.aspx"
+                      >종료된 이벤트</a
+                    >
+                  </h3>
+                </dd>
+              </dl>
+            </li>
+            <!-- <li>
+              <h2 onclick="gaEventLog('PC_GNB','주메뉴_해택','')">
+                <a href="/discount/discountlist.aspx">혜택</a>
+              </h2>
+              <dl class="nav_overMenu" style="">
+                <dt>
+                  <h2 style="color: black; font-weight: bold;">혜택
+                  </h2>
+                </dt>
+                <dd>
+                  <h3>
+                    <a href="/discount/discountlist.aspx">CGV 할인정보</a>
+                  </h3>
+                </dd>
+                <dd>
+                  <h3>
+                    <a
+                      href="https://www.cgv.co.kr/user/memberShip/ClubService.aspx"
+                      >CLUB 서비스</a
+                    >
+                  </h3>
+                </dd>
+                <dd>
+                  <h3><a href="/user/vip-lounge/">VIP 라운지</a></h3>
+                </dd>
+              </dl>
+            </li> -->
+            <div class="empty_space"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,67 @@
+{
+  "movie": [
+    {
+      "name": "오펜하이머",
+      "director": "크리스토퍼 놀란",
+      "actors": "킬리언 머피,  에밀리 블런트,  맷 데이먼,  로버트 다우니 주니어,  플로렌스 퓨,  조쉬 하트넷,  케이시 애플렉,  라미 말렉,  케네스 브래너",
+      "price": 10000,
+      "genre": "스릴러, 드라마",
+      "sating": "15세이상관람가",
+      "showtime": "180분",
+      "mainSummary": "“나는 이제 죽음이요, 세상의 파괴자가 되었다.”",
+      "summary": "세상을 구하기 위해 세상을 파괴할 지도 모르는 선택을 해야 하는 천재 과학자의 핵개발 프로젝트.",
+      "releaseDate": "2023.08.15",
+      "reservationRate": "63.4%",
+      "image": [
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217720_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217600_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217533_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg"
+      ],
+      "coments": [
+        {
+          "id": "jb**525",
+          "date": "2023.08.18",
+          "profileImage": "http://img.cgv.co.kr/R2014/images/common/default_profile.gif",
+          "coment": "영화가 전하고 싶은 내용이 뭔지 확실히 전달되는 느낌이었어요",
+          "like": "6"
+        },
+        {
+          "id": "se**3538",
+          "date": "2023.08.18",
+          "profileImage": "http://img.cgv.co.kr/R2014/images/common/default_profile.gif",
+          "coment": "오펜하이머를 향한 놀란의 러브레터",
+          "like": "2"
+        },
+        {
+          "id": "테디신이",
+          "date": "2023.08.18",
+          "profileImage": "https://img.cgv.co.kr/MyCGV/Profile/2017/0808/shinsland_053751_M.jpg",
+          "coment": "한 편의 전기문을 영화로 본 느낌! 역시 놀란의 작품은 놀라워.",
+          "like": "2"
+        },
+        {
+          "id": "mo**oo",
+          "date": "2023.08.18",
+          "profileImage": "https://img.cgv.co.kr/MyCGV/Profile/2022/0101/loveji6568_113509_M.jpg",
+          "coment": "파리쁴쁠!",
+          "like": "1"
+        },
+        {
+          "id": "썸머파티",
+          "date": "2023.08.18",
+          "profileImage": "http://img.cgv.co.kr/R2014/images/common/default_profile.gif",
+          "coment": "배우들의 연기는 너무너무 좋았어요. 그러나 방대한 대화량에 조금씩 지쳐 살짝 졸리고 했지만 영화자체는 굉장히 좋았어요.",
+          "like": "4"
+        },
+        {
+          "id": "xz**d99",
+          "date": "2023.08.18",
+          "profileImage": "http://img.cgv.co.kr/R2014/images/common/default_profile.gif",
+          "coment": "연기력 최고 놀란 감독의 특유",
+          "like": "3"
+        }
+      ]
+    }
+  ]
+}
