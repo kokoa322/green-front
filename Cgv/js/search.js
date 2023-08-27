@@ -13,7 +13,6 @@ $.ajax({
     console.log(movieDetailInfo);
     //해당하는 영화의 정보들
     if (movieDetailInfo.length >= 1) {
-      alert("movieDetailInfo.length <= 1");
       const {
         name,
         director,
@@ -151,7 +150,6 @@ $.ajax({
     </script>
     `);
     } else {
-      alert("else");
       $("body").append(`
       <header></header>
       <div id="cgvwrap">
