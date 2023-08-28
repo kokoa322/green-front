@@ -302,8 +302,8 @@ $.ajax({
                   <a href="/movies/detail-view/?midx=87136">
                     <span class="thumb-image">
                       <img
-                        src="${movieListInfo[4].image[0]}"
-                        alt="${movieListInfo[4].name}"
+                        src="${movieListInfo[5].image[0]}"
+                        alt="${movieListInfo[5].name}"
                         onerror="errorImage(this)"
                       />
                       <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -317,11 +317,11 @@ $.ajax({
                 </div>
                 <div class="box-contents">
                   <a href="/movies/detail-view/?midx=87136">
-                    <strong class="title">${movieListInfo[4].name}</strong>
+                    <strong class="title">${movieListInfo[5].name}</strong>
                   </a>
 
                   <div class="score">
-                    <strong class="percent">예매율<span>${movieListInfo[4].reservationRate}</span></strong>
+                    <strong class="percent">예매율<span>${movieListInfo[5].reservationRate}</span></strong>
                     <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
                     <div class="egg-gage small">
                       <span class="egg great"></span>
@@ -331,7 +331,7 @@ $.ajax({
 
                   <span class="txt-info">
                     <strong>
-                    ${movieListInfo[4].releaseDate}
+                    ${movieListInfo[5].releaseDate}
                       <span>개봉</span>
                     </strong>
                   </span>
@@ -351,8 +351,8 @@ $.ajax({
                 <a href="/movies/detail-view/?midx=87136">
                   <span class="thumb-image">
                     <img
-                      src="${movieListInfo[5].image[0]}"
-                      alt="${movieListInfo[5].name}"
+                      src="${movieListInfo[6].image[0]}"
+                      alt="${movieListInfo[6].name}"
                       onerror="errorImage(this)"
                     />
                     <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -366,11 +366,11 @@ $.ajax({
               </div>
               <div class="box-contents">
                 <a href="/movies/detail-view/?midx=87136">
-                  <strong class="title">${movieListInfo[5].name}</strong>
+                  <strong class="title">${movieListInfo[6].name}</strong>
                 </a>
 
                 <div class="score">
-                  <strong class="percent">예매율<span>${movieListInfo[5].reservationRate}</span></strong>
+                  <strong class="percent">예매율<span>${movieListInfo[6].reservationRate}</span></strong>
                   <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
                   <div class="egg-gage small">
                     <span class="egg great"></span>
@@ -380,7 +380,7 @@ $.ajax({
 
                 <span class="txt-info">
                   <strong>
-                  ${movieListInfo[5].releaseDate}
+                  ${movieListInfo[6].releaseDate}
                     <span>개봉</span>
                   </strong>
                 </span>
@@ -400,8 +400,8 @@ $.ajax({
               <a href="/movies/detail-view/?midx=87136">
                 <span class="thumb-image">
                   <img
-                    src="${movieListInfo[6].image[0]}"
-                    alt="${movieListInfo[6].name}"
+                    src="${movieListInfo[0].image[0]}"
+                    alt="${movieListInfo[0].name}"
                     onerror="errorImage(this)"
                   />
                   <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -415,11 +415,11 @@ $.ajax({
             </div>
             <div class="box-contents">
               <a href="/movies/detail-view/?midx=87136">
-                <strong class="title">${movieListInfo[6].name}</strong>
+                <strong class="title">${movieListInfo[0].name}</strong>
               </a>
 
               <div class="score">
-                <strong class="percent">예매율<span>${movieListInfo[6].reservationRate}</span></strong>
+                <strong class="percent">예매율<span>${movieListInfo[0].reservationRate}</span></strong>
                 <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
                 <div class="egg-gage small">
                   <span class="egg great"></span>
@@ -429,7 +429,7 @@ $.ajax({
 
               <span class="txt-info">
                 <strong>
-                ${movieListInfo[6].releaseDate}
+                ${movieListInfo[0].releaseDate}
                   <span>개봉</span>
                 </strong>
               </span>
@@ -450,8 +450,8 @@ $.ajax({
                 <a href="/movies/detail-view/?midx=87136">
                   <span class="thumb-image">
                     <img
-                      src="${movieListInfo[0].image[0]}"
-                      alt="${movieListInfo[0].name}"
+                      src="${movieListInfo[1].image[1]}"
+                      alt="${movieListInfo[1].name}"
                       onerror="errorImage(this)"
                     />
                     <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -465,11 +465,11 @@ $.ajax({
               </div>
               <div class="box-contents">
                 <a href="/movies/detail-view/?midx=87136">
-                  <strong class="title">${movieListInfo[0].name}</strong>
+                  <strong class="title">${movieListInfo[1].name}</strong>
                 </a>
   
                 <div class="score">
-                  <strong class="percent">예매율<span>${movieListInfo[0].reservationRate}</span></strong>
+                  <strong class="percent">예매율<span>${movieListInfo[1].reservationRate}</span></strong>
                   <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
                   <div class="egg-gage small">
                     <span class="egg great"></span>
@@ -479,7 +479,7 @@ $.ajax({
   
                 <span class="txt-info">
                   <strong>
-                  ${movieListInfo[0].releaseDate}
+                  ${movieListInfo[1].releaseDate}
                     <span>개봉</span>
                   </strong>
                 </span>
@@ -499,8 +499,8 @@ $.ajax({
               <a href="/movies/detail-view/?midx=87136">
                 <span class="thumb-image">
                   <img
-                    src="${movieListInfo[1].image[0]}"
-                    alt="${movieListInfo[1].name}"
+                    src="${movieListInfo[2].image[1]}"
+                    alt="${movieListInfo[2].name}"
                     onerror="errorImage(this)"
                   />
                   <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -514,11 +514,11 @@ $.ajax({
             </div>
             <div class="box-contents">
               <a href="/movies/detail-view/?midx=87136">
-                <strong class="title">${movieListInfo[1].name}</strong>
+                <strong class="title">${movieListInfo[2].name}</strong>
               </a>
 
               <div class="score">
-                <strong class="percent">예매율<span>${movieListInfo[1].reservationRate}</span></strong>
+                <strong class="percent">예매율<span>${movieListInfo[2].reservationRate}</span></strong>
                 <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
                 <div class="egg-gage small">
                   <span class="egg great"></span>
@@ -528,7 +528,7 @@ $.ajax({
 
               <span class="txt-info">
                 <strong>
-                ${movieListInfo[1].releaseDate}
+                ${movieListInfo[2].releaseDate}
                   <span>개봉</span>
                 </strong>
               </span>
@@ -548,8 +548,8 @@ $.ajax({
             <a href="/movies/detail-view/?midx=87136">
               <span class="thumb-image">
                 <img
-                  src="${movieListInfo[2].image[0]}"
-                  alt="${movieListInfo[2].name}"
+                  src="${movieListInfo[3].image[1]}"
+                  alt="${movieListInfo[3].name}"
                   onerror="errorImage(this)"
                 />
                 <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -563,11 +563,11 @@ $.ajax({
           </div>
           <div class="box-contents">
             <a href="/movies/detail-view/?midx=87136">
-              <strong class="title">${movieListInfo[2].name}</strong>
+              <strong class="title">${movieListInfo[3].name}</strong>
             </a>
 
             <div class="score">
-              <strong class="percent">예매율<span>${movieListInfo[2].reservationRate}</span></strong>
+              <strong class="percent">예매율<span>${movieListInfo[3].reservationRate}</span></strong>
               <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
               <div class="egg-gage small">
                 <span class="egg great"></span>
@@ -577,7 +577,7 @@ $.ajax({
 
             <span class="txt-info">
               <strong>
-              ${movieListInfo[2].releaseDate}
+              ${movieListInfo[3].releaseDate}
                 <span>개봉</span>
               </strong>
             </span>
@@ -597,8 +597,8 @@ $.ajax({
           <a href="/movies/detail-view/?midx=87136">
             <span class="thumb-image">
               <img
-                src="${movieListInfo[3].image[0]}"
-                alt="${movieListInfo[3].name}"
+                src="${movieListInfo[4].image[1]}"
+                alt="${movieListInfo[4].name}"
                 onerror="errorImage(this)"
               />
               <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -612,11 +612,11 @@ $.ajax({
         </div>
         <div class="box-contents">
           <a href="/movies/detail-view/?midx=87136">
-            <strong class="title">${movieListInfo[3].name}</strong>
+            <strong class="title">${movieListInfo[4].name}</strong>
           </a>
 
           <div class="score">
-            <strong class="percent">예매율<span>${movieListInfo[3].reservationRate}</span></strong>
+            <strong class="percent">예매율<span>${movieListInfo[4].reservationRate}</span></strong>
             <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
             <div class="egg-gage small">
               <span class="egg great"></span>
@@ -626,7 +626,7 @@ $.ajax({
 
           <span class="txt-info">
             <strong>
-            ${movieListInfo[3].releaseDate}
+            ${movieListInfo[4].releaseDate}
               <span>개봉</span>
             </strong>
           </span>
@@ -646,8 +646,8 @@ $.ajax({
         <a href="/movies/detail-view/?midx=87136">
           <span class="thumb-image">
             <img
-              src="${movieListInfo[4].image[0]}"
-              alt="${movieListInfo[4].name}"
+              src="${movieListInfo[5].image[1]}"
+              alt="${movieListInfo[5].name}"
               onerror="errorImage(this)"
             />
             <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -661,11 +661,11 @@ $.ajax({
       </div>
       <div class="box-contents">
         <a href="/movies/detail-view/?midx=87136">
-          <strong class="title">${movieListInfo[4].name}</strong>
+          <strong class="title">${movieListInfo[5].name}</strong>
         </a>
 
         <div class="score">
-          <strong class="percent">예매율<span>${movieListInfo[4].reservationRate}</span></strong>
+          <strong class="percent">예매율<span>${movieListInfo[5].reservationRate}</span></strong>
           <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
           <div class="egg-gage small">
             <span class="egg great"></span>
@@ -675,7 +675,7 @@ $.ajax({
 
         <span class="txt-info">
           <strong>
-          ${movieListInfo[4].releaseDate}
+          ${movieListInfo[5].releaseDate}
             <span>개봉</span>
           </strong>
         </span>
@@ -695,8 +695,8 @@ $.ajax({
       <a href="/movies/detail-view/?midx=87136">
         <span class="thumb-image">
           <img
-            src="${movieListInfo[5].image[0]}"
-            alt="${movieListInfo[5].name}"
+            src="${movieListInfo[6].image[1]}"
+            alt="${movieListInfo[6].name}"
             onerror="errorImage(this)"
           />
           <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -710,11 +710,11 @@ $.ajax({
     </div>
     <div class="box-contents">
       <a href="/movies/detail-view/?midx=87136">
-        <strong class="title">${movieListInfo[5].name}</strong>
+        <strong class="title">${movieListInfo[6].name}</strong>
       </a>
 
       <div class="score">
-        <strong class="percent">예매율<span>${movieListInfo[5].reservationRate}</span></strong>
+        <strong class="percent">예매율<span>${movieListInfo[6].reservationRate}</span></strong>
         <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
         <div class="egg-gage small">
           <span class="egg great"></span>
@@ -724,7 +724,7 @@ $.ajax({
 
       <span class="txt-info">
         <strong>
-        ${movieListInfo[5].releaseDate}
+        ${movieListInfo[6].releaseDate}
           <span>개봉</span>
         </strong>
       </span>
@@ -744,8 +744,8 @@ $.ajax({
     <a href="/movies/detail-view/?midx=87136">
       <span class="thumb-image">
         <img
-          src="${movieListInfo[6].image[0]}"
-          alt="${movieListInfo[6].name}"
+          src="${movieListInfo[0].image[2]}"
+          alt="${movieListInfo[0].name}"
           onerror="errorImage(this)"
         />
         <!-- 영상물 등급 노출 변경 2022.08.24 -->
@@ -759,11 +759,11 @@ $.ajax({
   </div>
   <div class="box-contents">
     <a href="/movies/detail-view/?midx=87136">
-      <strong class="title">${movieListInfo[6].name}</strong>
+      <strong class="title">${movieListInfo[0].name}</strong>
     </a>
 
     <div class="score">
-      <strong class="percent">예매율<span>${movieListInfo[6].reservationRate}</span></strong>
+      <strong class="percent">예매율<span>${movieListInfo[0].reservationRate}</span></strong>
       <!-- 2020.05.07 개봉전 프리에그 노출, 개봉후 골든에그지수 노출변경 (적용 범위4~ 7위)-->
       <div class="egg-gage small">
         <span class="egg great"></span>
@@ -773,7 +773,7 @@ $.ajax({
 
     <span class="txt-info">
       <strong>
-      ${movieListInfo[6].releaseDate}
+      ${movieListInfo[0].releaseDate}
         <span>개봉</span>
       </strong>
     </span>
@@ -793,7 +793,7 @@ $.ajax({
   <a href="/movies/detail-view/?midx=87136">
     <span class="thumb-image">
       <img
-        src="${movieListInfo[1].image[0]}"
+        src="${movieListInfo[1].image[2]}"
         alt="${movieListInfo[1].name}"
         onerror="errorImage(this)"
       />
