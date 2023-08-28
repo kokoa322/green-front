@@ -24,8 +24,11 @@ body {
   position: relative;
 }
 #section .article1 ul li .cgvIcon {
-  position: absolute; top: 5px; right: 5px;
-  width: 30px; height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 #section .article1 > p {
@@ -73,7 +76,7 @@ body {
   background-image: url(../img/달짝지근해-7510.jpg);
 }
 #section .article1 ul li:nth-child(4) {
-  background-image: url(../img/보호자.jpg);
+  background-image: url(../img/타겟.jpg);
 }
 #section .article1 ul li > div {
   position: absolute;
@@ -285,7 +288,7 @@ body {
   background-color: #f8f8f8;
 }
 
-#footer .policy_info{
+#footer .policy_info {
   margin: 0px 30px;
   font-size: 13px;
 }
@@ -298,7 +301,7 @@ body {
   border-bottom: 1px solid #ebebeb;
 }
 
-#footer .policy_info .policy_list strong{
+#footer .policy_info .policy_list strong {
   text-decoration: underline;
   font-weight: 500;
 }
