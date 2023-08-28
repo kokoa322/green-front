@@ -144,18 +144,6 @@
         })
     </script>
     <script>
-        let $elFam = $('#footer .fam')
-        let $elLi = $('.article5 .cs_board .tabmenu > li')
-        let $elDiv = $('.article5 .cs_board .contents > div')
-        $elFam.on('click', function () {
-            $(this).find('ul').slideToggle()
-        })
-        $elLi.on('click', function () {
-            let num = $(this).index()
-            $(this).addClass('active').siblings().removeClass('active')
-            $elDiv.eq(num).addClass('active').siblings().removeClass('active')
-        })
-
         $(document).on('click', '.sect-city2 a', function(){
             let theaterImage = $(this).attr('href')
             let theaterName = $(this).text()

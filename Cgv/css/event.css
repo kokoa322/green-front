@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap");
 .row {
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 #section .article1{
-    width: 100%;
+    width: 960px;
     height: 42px;
     line-height: 42px;
     background-color: #f8f8f8;
@@ -26,10 +26,11 @@ body {
 
 #section .article1 > div{
     display: flex;
+    justify-content: space-between;
     
 }
 #section .article1 .date{
-    margin-left: 700px;
+    margin-left: 500px;
 }
 
 #section .txt-lightblue span:nth-child(1){

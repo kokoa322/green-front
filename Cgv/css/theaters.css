@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap");
 .row {
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -18,9 +18,9 @@ body {
 #section .article1 .sect-common {
     background: url(../img/bg_showtimes_favorite.gif) no-repeat 0 0;
     background-size: 100%;
-    width: 1080px;
-    height: 600px;
-    padding: 60px 53px 0;
+    width: 874px;
+    height: 400px;
+    padding: 60px 53px ;
 }
 
 #section .article1 .sect-common .sect-city1{
@@ -101,12 +101,13 @@ body {
 
 #section .article1 .wrap-theaterinfo{
     position: relative;
+    margin-bottom: 30px;
 }
 #section .article1 .wrap-theaterinfo .box-contents {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1140px;
+    width: 920px;
     padding: 20px 30px;
     background: url(../img/bg_dim80.png) 0 0 repeat;
     color: #fdfcf0;
