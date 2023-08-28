@@ -19,7 +19,7 @@ $.ajax({
       reservationRate,
     } = movieInfo.movie[0];
 
-    const [img1, img2, img3, img4] = movieInfo.movie[0].image;
+    const [img1, img2, img3, img4, img5] = movieInfo.movie[0].image;
 
     const [coment1, coment2, coment3, coment4, coment5, coment6] =
       movieInfo.movie[0].coments;
@@ -41,7 +41,7 @@ $.ajax({
                 >
                   <span class="thumb-image">
                     <img
-                      src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87175/87175_320.jpg"
+                      src="${img5}"
                       alt="오펜하이머 포스터 새창"
                       onerror="errorImage(this)"
                     />
