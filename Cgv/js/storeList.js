@@ -12,74 +12,11 @@ $.ajax({
       <div id="contaniner" class="">
         <div id="contents" class="">
           <div id="divAction"></div>
-          <div class="tit-heading-wrap tit-evt">
-            <h3>스토어</h3>
-          </div>
-          <script language="javascript" type="text/javascript">
-            var cname = "";
-
-            history.navigationMode = "compatible";
-            $(document).ready(function () {
-              $.giftstore_fixObj(
-                this,
-                $(".category_contents_wrap"),
-                $(".category_content"),
-                $(".giftstore_logo")
-              );
-              if (cname != "") {
-                $(".sect-linemap .sect-bcrumb .last").html("");
-              }
-            });
-
-            function fnCategoryData(cno) {
-              location.href =
-                "/culture-event/popcorn-store/store-category.aspx?CategoryIdx=" +
-                cno;
-            }
-          </script>
-
-          <div class="category_wrap" style="left: 0px">
-            <div class="category_contents_wrap">
-              <ul class="category_content">
-                <li id="cm1" name="categorymenu" class="">
-                  <a href="#" onclick="javascript:fnCategoryData('1');"
-                    >패키지</a
-                  >
-                </li>
-                <li id="cm5" name="categorymenu" class="">
-                  <a href="#" onclick="javascript:fnCategoryData('5');">팝콘</a>
-                </li>
-                <li id="cm6" name="categorymenu" class="">
-                  <a href="#" onclick="javascript:fnCategoryData('6');">음료</a>
-                </li>
-                <li id="cm7" name="categorymenu" class="">
-                  <a href="#" onclick="javascript:fnCategoryData('7');">스낵</a>
-                </li>
-              </ul>
-              <ul class="cart_content">
-                <li>
-                  <a href="#" onclick="javascript:app.goLogin();return false;"
-                    >내 기프트콘</a
-                  ><span id="giftconcnt">0</span>
-                </li>
-                <li>
-                  <a href="#" onclick="javascript:app.goLogin();return false;"
-                    >장바구니</a
-                  ><span id="cartviewcnt">0</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
           <div class="category_product_wrap">
             <ul class="category_product_list">
               <li>
                 <strong class="category_product_title"
-                  >패키지<a
-                    href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=1"
-                    class="btn_category_product"
-                    >더보기</a
-                  ></strong
+                  >패키지</strong
                 >
                 <ul class="category_product_inner_list">
                   
@@ -242,11 +179,8 @@ $.ajax({
 
               <li>
                 <strong class="category_product_title"
-                  >음료<a
-                    href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=6"
-                    class="btn_category_product"
-                    >더보기</a
-                  ></strong
+                  >음료
+                  </strong
                 >
                 <ul class="category_product_inner_list">
                   <li class=" ">
@@ -374,11 +308,8 @@ $.ajax({
               </li>
               <li>
                 <strong class="category_product_title"
-                  >스낵<a
-                    href="/culture-event/popcorn-store/store-category.aspx?CategoryIdx=7"
-                    class="btn_category_product"
-                    >더보기</a
-                  ></strong
+                  >스낵
+                  </strong
                 >
                 <ul class="category_product_inner_list">
                   <li class="">
