@@ -139,6 +139,8 @@ body {
 #section .article2 ul li > div {
   position: relative;
   overflow: hidden;
+  width: 310.5px;
+  border-radius: 10px;
 }
 #section .article2 ul li > div img {
   transition: all 0.5s;
@@ -165,7 +167,7 @@ body {
   opacity: 1;
 }
 #section .article2 ul li > div:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #section .article3 > h2 {
