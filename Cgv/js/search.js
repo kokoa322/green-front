@@ -149,7 +149,7 @@ $.ajax({
       $("header").load("header.html");
     </script>
     `);
-    } else {
+    } else if (movieDetailInfo.length <= 1) {
       $("body").append(`
       <header></header>
       <div id="cgvwrap">
