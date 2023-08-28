@@ -2,9 +2,12 @@ $.ajax({
   type: "GET",
   url: "./json/movieData.json",
   dataType: "json",
-  success(movieInfo) {
-    console.log(movieInfo.movie);
-    //해당하는 영화의 정보들
+  success(response) {
+    let target = new URLSearchParams(location.search).get("target");
+    let moiveObj = response.movie;
+
+    let movieDetailInfo = moiveObj.filter((value) => value.name == target);
+
     const {
       name,
       director,
@@ -17,12 +20,12 @@ $.ajax({
       summary,
       releaseDate,
       reservationRate,
-    } = movieInfo.movie[0];
+    } = movieDetailInfo[0];
 
-    const [img1, img2, img3, img4, img5] = movieInfo.movie[0].image;
+    const [img1, img2, img3, img4, img5] = movieDetailInfo[0].image;
 
     const [coment1, coment2, coment3, coment4, coment5, coment6] =
-      movieInfo.movie[0].coments;
+      movieDetailInfo[0].coments;
 
     $("body").append(`
       <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
@@ -41,7 +44,7 @@ $.ajax({
                 >
                   <span class="thumb-image">
                     <img
-                      src="${img5}"
+                      src="${img1}"
                       alt="오펜하이머 포스터 새창"
                       onerror="errorImage(this)"
                     />
@@ -188,7 +191,7 @@ $.ajax({
                         >
                           <span class="thumb-image">
                             <img
-                              src="${img1}"
+                              src="${img2}"
                               alt="[오펜하이머]5분 하이라이트 영상"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -223,7 +226,7 @@ $.ajax({
                         >
                           <span class="thumb-image">
                             <img
-                              src="${img2}"
+                              src="${img3}"
                               alt="[오펜하이머]세상을 바꾼 사람들"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -258,7 +261,7 @@ $.ajax({
                         >
                           <span class="thumb-image">
                             <img
-                              src="${img3}"
+                              src="${img4}"
                               alt="[오펜하이머]세상을 바꾼 순간"
                               onerror="errorImage(this, {'type':'landscape'})"
                             />
@@ -343,10 +346,10 @@ $.ajax({
                       <div class="item-wrap on">
                         <div class="item" style="width: 122%; height: 450px">
                           <img
-                            data-src="${img4}"
+                            data-src="${img5}"
                             alt="오펜하이머"
                             onerror="errorImage(this)"
-                            src="${img4}"
+                            src="${img5}"
                             style="width: 100%; margin-bottom: 200px"
                           />
                         </div>

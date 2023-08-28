@@ -55,7 +55,7 @@ $.ajax({
                     class="img_wrap"
                     title="포스터 크게 보기 새창"
                     ><img
-                      src="${img5}"
+                      src="${img1}"
                       alt="${imgAlt}"
                       onerror="errorImage(this)"
                   /></a>
@@ -110,7 +110,7 @@ $.ajax({
                 <li>
                   <a href="/movies/detail-view/?midx=87175" class="img_wrap">
                     <img
-                      src="${img5}"
+                      src="${img1}"
                       alt="오펜하이머"
                       onerror="errorImage(this)"
                     />
