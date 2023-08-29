@@ -20,9 +20,6 @@ $.ajax({
     <div id="contaniner" class="">
       <div id="contents" class="">
         
-
-       
-
         <div class="category_product_detail_wrap">
           <strong class="category_product_detail_title">${name}</strong>
           <div class="category_product_detail_contents">
@@ -108,20 +105,14 @@ $.ajax({
                       class="com_total_price0 com_product_total_price"
                       >${price
                         .toString()
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span
-                    >
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                   </p>
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-                <a
-                  href="#"
-                  onclick="javascript:app.goLogin();return false;"
-                  class="btn_cart"
-                  >장바구니</a
-                >
+               
                 <a href="#" onclick="javascript:app.goLogin(); return false;"
-                  >선물하기</a
+                  >장바구니</a
                 ><a href="#" onclick="javascript:app.goLogin();return false;"
                   >구매하기</a
                 >

@@ -164,7 +164,7 @@ $.ajax({
                       alt="검색 결과 없음"
                     />
                     <strong id="search_result"
-                      >'dkanrjsk' 검색결과가 없습니다.</strong
+                      >"${target}" 검색결과가 없습니다.</strong
                     >
                     <span id="search_result_re"
                       >영화 또는 인물명을 확인 후 다시 검색해주세요!</span
@@ -184,9 +184,12 @@ $.ajax({
           </div>
         </div>
       </div>
+      <footer></footer>
       <script>
       $('header').load('./header.html')
-      </script>`);
+      $('footer').load('./footer.html')
+      </script>
+      `);
     }
   },
   error(xhr) {
