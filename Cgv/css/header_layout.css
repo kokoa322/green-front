@@ -107,7 +107,8 @@ a {
   top: 113px;
   width: 100%;
   padding: 5px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: red; */
   border-top: 1px solid #eee;
 }
 .nav:after {
@@ -140,6 +141,7 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  height: 45px;
 }
 .nav_menu > li {
   width: 162px;
