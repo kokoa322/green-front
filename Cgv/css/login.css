@@ -14,59 +14,22 @@ body {
     font-family: "Noto Sans KR", sans-serif;
 }
 
-
-ul {
-    list-style: none;
-}
-
-fieldset {
-    border: none;
-    /* border-top: 2px solid #999;
-    border-bottom: 1px solid #999; */
-    text-align: center;
-    margin-right: 100px;
-}
-
-
-legend {
-    display: none;
-}
-
-.guide {
-    font-size: 13px;
-    line-height: 1.2;
-    color: #666;
-}
-
-#login {
-    min-width: 900px;
-    max-width: 900px;
-    margin: 50px auto;
-}
-
-
 .loginbox {
-    display: flex;
+    margin-top: 100px;
+    text-align: center;
 }
 
-.loginbox::after {
-    content: '';
-    clear: both;
-    display: block;
+.loginbox h1 {
+    font-size: 21px;
+    font-weight: 1000;
+    margin: 17px 0;
 }
 
-.loginbox div p input:focus {
-    outline: none;
-}
+.loginbox div {}
 
-.loginbox div p input {
-    width: 300px;
+.loginbox div input {
     border: none;
-    border-bottom: 1px solid #b5b5b5;
-    height: 35px;
-    padding: 0 5px 0 40px;
-
-
+    border-bottom: 1px solid #b5b5b5
 }
 
 .loginbox div p:nth-child(1) label {
@@ -75,6 +38,9 @@ legend {
 
 .loginbox div p:nth-child(1) input {
     background: url(../image/sprite_icon.png) 12px -230px no-repeat;
+    padding-left: 50px;
+    height: 30px;
+    width: 330px;
 }
 
 .loginbox div p:nth-child(2) label {
@@ -83,15 +49,23 @@ legend {
 
 .loginbox div p:nth-child(2) input {
     background: url(../image/sprite_icon.png) 12px -261px no-repeat;
+    padding-left: 50px;
+    height: 30px;
+    width: 330px;
+}
+.id_save{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.btn {
-    width: 400px;
-    height: 42px;
-    margin: auto;
+.id_save input{
+    margin: 0 0 0px 300px
 }
 
-.btn button {
+.btn{
+}
+
+.btn button{
     width: 400px;
     height: 42px;
     line-height: 37px;
@@ -105,55 +79,52 @@ legend {
     box-shadow: 0 8px 14px -5px rgba(0, 0, 0, 0.26);
 }
 
-#login .loginbox .sns_login {
-    margin-top: 30px
+.login-option{
+    margin-top: 10px;
 }
 
-#login .loginbox .sns_login li a {
-    display: block;
-    width: 216px;
-    height: 42px;
-    line-height: 42px;
-    text-align: center;
-    color: #fff;
-    font-size: 13px;
-    margin: 5px 0;
-}
-
-
-.login-option {
-    font-size: 13px;
-    padding-left: 20px;
-    margin: 8px 0px 0px 0px;
-}
-
-.login-option a {
-    padding-right: 30px;
-    line-height: 1.2;
-    color: #666;
+.login-option a{
     text-decoration: underline;
-
 }
 
-.login-option a:nth-child(1) {
-    background: url(../image/bg_arrow03.png) no-repeat 91px 5px;
+.login-option img{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
 }
 
-.login-option a:nth-child(2) {
-    background: url(../image/bg_arrow03.png) no-repeat 81px 5px;
+.sns_login{
+    margin-top: 30px;
+    text-align: center;
 }
-
-
-
-
+.sns_login li{
+    text-align: center;
+}
+.sns_login li a{ 
+    display:inline-block; 
+    width: 400px;
+    height: 42px;
+    line-height:42px; 
+    text-align:center;
+    color:#fff; 
+    border-radius: 24px;
+    margin:5px 0;
+}
+.sns_login li:nth-child(1) a{
+    background:#00c300 url(../img/ico_naver.png) no-repeat 10px center/50px 50px;
+}
+.sns_login li:nth-child(2) a{
+    background:#ffea26 url(../img/ico_kakao.png) no-repeat 10px center/50px 50px; color:#000;
+}
 .login_guide {
-    width: 1200px;
-    text-align: start;
-    margin-top: 100px;
+    width: 940px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    margin: 100px 0;
     padding: 20px 20px;
     font-size: 13px;
     color: #666;
-    max-width: 796px;
     background-color: #EEEEEE;
     display: flex;
     position: relative;
@@ -173,7 +144,6 @@ legend {
 .login_guide p:nth-child(2) {
     position: absolute;
     left: 20%;
-    top: 25%;
 }
 
 .login_guide p:nth-child(3) {
@@ -181,8 +151,8 @@ legend {
     width: 100px;
     height: 40px;
     position: absolute;
-    left: 70%;
-    top: 10%;
+    left: 80%;
+    top: 25%;
     line-height: 40px;
     text-align: center;
     font-weight: 600;
@@ -192,33 +162,4 @@ legend {
     background-color: #333;
     transition: all 0.5s;
     color: white;
-}
-
-.sns_login div button {
-    width: 400px;
-    height: 48px;
-    border-radius: 24px;
-    border: 1px solid #9197a3;
-    background: white;
-    color: black;
-    font-size: 16px;
-    letter-spacing: 0px;
-    ;
-    font-size: 13px;
-}
-
-.sns_login div {
-    margin: 5px 0;
-}
-
-.id_save {
-    text-align: center;
-    margin: 0 0 10px 250px;
-    font-weight: 100;
-    letter-spacing: -1px;
-    font-size: 14px;
-}
-
-button {
-    cursor: pointer;
 }
