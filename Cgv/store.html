@@ -23,5 +23,17 @@
   </head>
   <body>
     <script src="./js/storeList.js"></script>
+    <script>
+      $('body').on('click', '.btn_category_product_buy', function(){
+      let myid = sessionStorage.getItem("userid")
+      if (!myid) {
+        alert("로그인 후 구매할 수 있습니다.")
+        location.href = "./login.html"
+      } else {
+        location.href = "./buy.html"
+        localStorage.clear()
+      }
+    })
+    </script>
   </body>
 </html>

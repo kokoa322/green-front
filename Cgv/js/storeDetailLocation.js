@@ -20,9 +20,6 @@ $.ajax({
     <div id="contaniner" class="">
       <div id="contents" class="">
         
-
-       
-
         <div class="category_product_detail_wrap">
           <strong class="category_product_detail_title">${name}</strong>
           <div class="category_product_detail_contents">
@@ -108,21 +105,16 @@ $.ajax({
                       class="com_total_price0 com_product_total_price"
                       >${price
                         .toString()
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span
-                    >
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                   </p>
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-                <a href="#"
-                  onclick="javascript:app.goLogin();return false;"
-                  class="btn_cart">장바구니
+                <a href="javascript:;" id="cart">
+                  장바구니
                 </a>
-                <a href="#" onclick="javascript:app.goLogin(); return false;">
-                선물하기
-                </a>
-                <a href="#" onclick="javascript:app.goLogin();return false;">
-                구매하기
+                <a href="#" id="buy"onclick="javascript:app.goLogin();return false;">
+                  구매하기
                 </a>
               </div>
             </div>
@@ -260,4 +252,17 @@ $("body").on("click", ".com_btn_minus", function () {
     $(".com_form_count").text(quantity);
     getTotal(quantity);
   }
+});
+
+$("body").on("click", ".category_product_detail_btn_wrap #cart", function () {
+  let price = $(".store_deatail_sale_price").text();
+  let total = $(".com_product_total_price").text();
+  let image = $(".bxslider li img").attr("src");
+  let count = $(".com_form_count").text();
+  let productName = $(".category_product_detail_title").text();
+
+  $(location).attr(
+    "href",
+    `./cart.html?price=${price}?total=${total}&image=${image}&count=${count}&productName=${productName}`
+  );
 });
