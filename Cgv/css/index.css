@@ -14,12 +14,28 @@ body {
 #section .moviechart {
   color: #000;
   font-size: 36px;
-  line-height: 42px;
   font-weight: 700;
   padding: 80px 0 10px;
-  text-align: center;
   font-size: 26px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
 }
+#section .allView{
+  position:relative;
+}
+
+#section .btn_allView{
+  position: absolute; top: 70%; right: 10px;
+  padding: 5px 25px 4px 15px;
+  font-size: 14px;
+  color: #222;
+  background: transparent url(../image/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+
 #section .article1 ul {
   position: relative;
 }
@@ -86,9 +102,10 @@ body {
   transition: all 0.5s;
 }
 #section .article1 ul li > div h3 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   font-weight: 500;
+  filter: drop-shadow(2px 2px 2px black);
 }
 #section .article1 ul li > div p {
   padding: 20px 0;
@@ -107,10 +124,6 @@ body {
 }
 #section .article1 ul li:hover > div {
   bottom: 20%;
-}
-#section .article2 > h2 {
-  text-align: left;
-  margin-left: 20px;
 }
 
 #section .article2 ul {
@@ -173,17 +186,13 @@ body {
   transform: scale(1.1);
 }
 
-#section .article3 > h2 {
-  text-align: left;
-  margin-left: 20px;
-}
 #section .article3 .gallery {
   display: flex;
   justify-content: space-between;
 }
 #section .article3 .gallery .image {
   overflow: hidden;
-  width: 600px;
+  width: 87%;
 }
 #section .article3 .gallery .image ul {
   display: flex;
@@ -194,6 +203,7 @@ body {
 }
 #section .article3 .text {
   width: 500px;
+  margin-left: 30px;
 }
 
 #section .article3 .text p {
@@ -230,7 +240,7 @@ body {
 }
 
 #section .article4 .noticeClient_content {
-  width: 700px;
+  width: 550px;
   padding: 24px 26px 20px 30px;
   border-right: 2px solid #f6f6f6;
 }
@@ -273,43 +283,10 @@ body {
 
 #section .article4 .qr_wrap {
   text-align: center;
-  padding: 24px 26px 20px 120px;
+  padding: 24px 26px 20px 100px;
 }
 #section .article4 .img_wrap img {
   width: 60px;
   height: 60px;
   margin: 20px 20px;
-}
-
-/* 푸터 */
-#footer {
-  min-width: 1040px;
-  padding: 0 0 14px;
-  background-color: #f8f8f8;
-}
-
-#footer .policy_info {
-  margin: 0px 30px;
-  font-size: 13px;
-}
-
-#footer .policy_info .policy_list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 980px;
-  padding: 23px 0;
-  border-bottom: 1px solid #ebebeb;
-}
-
-#footer .policy_info .policy_list strong {
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-#footer .company_info {
-  padding: 20px 0;
-}
-#footer .company_info p {
-  padding: 5px 20px;
-  text-align: left;
 }
