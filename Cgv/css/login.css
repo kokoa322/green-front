@@ -111,10 +111,10 @@ body {
     margin:5px 0;
 }
 .sns_login li:nth-child(1) a{
-    background:#00c300 url(../img/ico_naver.png) no-repeat 10px center/50px 50px;
+    background:#ffea26 url(../img/ico_kakao.png) no-repeat 10px center/50px 50px; color:#000;
 }
 .sns_login li:nth-child(2) a{
-    background:#ffea26 url(../img/ico_kakao.png) no-repeat 10px center/50px 50px; color:#000;
+    background:#00c300 url(../img/ico_naver.png) no-repeat 10px center/50px 50px; 
 }
 .login_guide {
     width: 940px;
