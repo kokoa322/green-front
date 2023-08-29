@@ -110,14 +110,6 @@ $.ajax({
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-<<<<<<< HEAD
-               
-                <a href="javascript:;" id="cart"
-                  >장바구니</a
-                ><a href="#" onclick="javascript:app.goLogin();return false;"
-                  >구매하기</a
-                >
-=======
                 <a href="#"
                   onclick="javascript:app.goLogin();return false;"
                   class="btn_cart">장바구니
@@ -128,7 +120,6 @@ $.ajax({
                 <a href="#" onclick="javascript:app.goLogin();return false;">
                 구매하기
                 </a>
->>>>>>> eeb18ad75b682156337750b2b8cd638483f53ff4
               </div>
             </div>
           </div>
