@@ -110,12 +110,9 @@ $.ajax({
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-                <a href="#"
-                  onclick="javascript:app.goLogin();return false;"
-                  class="btn_cart">장바구니
-                </a>
-                <a href="#" onclick="javascript:app.goLogin(); return false;">
-                선물하기
+               
+                <a href="#" id="cart">
+                장바구니
                 </a>
                 <a href="#" onclick="javascript:app.goLogin();return false;">
                 구매하기
@@ -267,6 +264,6 @@ $("body").on("click", ".category_product_detail_btn_wrap #cart", function () {
 
   $(location).attr(
     "href",
-    `./cart.html?price=${price}?total=${total}&image=${image}&count=${count}&productName=${productName}`
+    `./cart.html?price=${price}&total=${total}&image=${image}&count=${count}&productName=${productName}`
   );
 });
