@@ -262,8 +262,21 @@ $("body").on("click", ".category_product_detail_btn_wrap #cart", function () {
   let count = $(".com_form_count").text();
   let productName = $(".category_product_detail_title").text();
 
-  $(location).attr(
-    "href",
-    `./cart.html?price=${price}&total=${total}&image=${image}&count=${count}&productName=${productName}`
-  );
+  let newItem = {
+    productName: productName,
+    price: price,
+    total: total,
+    image: image,
+    count: count,
+  };
+
+  let itemList = JSON.parse(localStorage.getItem("allItem")); // allItem이라는게 없으니 null값으로 출력
+  if (itemList == null) {
+    itemList = [];
+  }
+
+  itemList.push(newItem);
+  localStorage.setItem("allItem", JSON.stringify(itemList));
+
+  $(location).attr("href", `./cart.html?newItem=${newItem}`);
 });

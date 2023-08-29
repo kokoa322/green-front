@@ -1,24 +1,13 @@
-let price = new URLSearchParams(location.search).get("price");
-let total = new URLSearchParams(location.search).get("total");
-let image = new URLSearchParams(location.search).get("image");
-let count = new URLSearchParams(location.search).get("count");
-let productName = new URLSearchParams(location.search).get("productName");
+let cartList = JSON.parse(localStorage.getItem("allItem"));
 
-localStorage.setItem("price");
-
-$("body").append(`
-<section class="cartBox row">
- <div class="cartInfo">
-  <h2>장바구니</h2>
-  <p></p>
- </div>
-</section>
-`);
-
+console.log(cartList.length);
 function listing() {
   if (cartList.length) {
+    let priceTotal = 0;
     $(".cartInfo p").text("");
-    let trList = `<table border="1">
+    let trList = `
+    
+    <table border="1">
                   <colgroup>
                     <col />
                     <col />
@@ -38,28 +27,36 @@ function listing() {
     trList += `<tbody>`;
     cartList.forEach((value, index) => {
       trList += `<tr>`;
-      trList += `<td><img src="./img/${value.photo}" alt="${value.name}" /></td>`;
-      trList += `<td>${value.name} <br> <span class="price">${value.price}</span></td>`;
-      trList += `<td>
+      trList += `<td><img src="${value.image}" alt="${value.productName}" style="width:80px" /></td>`;
+      trList += `<td>${value.productName} <br> <span class="price">${value.price}</span></td>`;
+      trList += `<td style="display: inline">
                 <button type="button" class="qty__plus">+</button>
-                <input type="text" value="${value.quantity}" autocomplete="off" class="qty__input">
+                <input type="text" value="${value.count}" autocomplete="off" class="qty__input">
                 <button type="button" class="qty__minus">-</button>
              </td>`;
-      trList += `<td class="myTotal">${(value.quantity * value.price)
+      trList += `<td class="myTotal">${(
+        parseInt(value.price.replace(",", "")) * parseInt(value.count)
+      )
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>`;
       trList += `<td><button type="button" class="remove">삭제</button></td>`;
       trList += `</tr>`;
-      total = total + value.quantity * value.price;
+      priceTotal =
+        parseInt(value.price.replace(",", "")) * parseInt(value.count) +
+        priceTotal;
     });
     trList += `</tbody>`;
     trList += `<tfoot>`;
     trList += `<tr>`;
-    trList += `<td colspan="5">합계 : <span>${total}</span></td>`;
+    trList += `<td colspan="5">합계 : <span>${priceTotal
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span></td>`;
     trList += `</tr>`;
     trList += `</tfoot>`;
     trList += `</table>`;
-    trList += `<div class="order"><button type=button>주문하기</button></div>`;
+    trList += `<div class="order"><button type=button>주문하기</button></div>
+   
+    `;
 
     $(".cartBox table").remove();
     $(".cartBox .order").remove();
@@ -71,6 +68,80 @@ function listing() {
 }
 
 listing();
+
+$("body").on("click", ".qty__plus", function () {
+  // $(".qty__input").val() = input 상자에 입력된 값 문자로 추출(parseInt로 묶으면 문자는 무시하고 숫자로 변환해줌)
+  let count = $(this).next().val(); // 지역변수quantity에 this(클릭한qty__plus)의 next(다음요소의 값(input))을 추출해서 대입
+  let myprice = $(this).parent().prev().find(".price").text();
+  let total = 0;
+  if (count) {
+    count = count;
+    $(this).next().val(++count); // select, input에 값을 넣어줄때 val(값)(val() 빈칸일 때는 현재값을 추출해줌)
+    total = count * parseInt(myprice.toString().replace(",", ""));
+  } else {
+    count = 1;
+    $(this).next().val(count);
+    total = count * parseInt(myprice.toString().replace(",", ""));
+  }
+  $(this)
+    .parent()
+    .next()
+    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+  getTotal();
+});
+
+// - 누르면
+$("body").on("click", ".qty__minus", function () {
+  count = parseInt($(this).prev().val()); // prev = 이전요소 // 지역변수quantity에 this(클릭한qty__minus)의 prev(이전요소의 값(input))을 추출해서 대입
+  let myprice = $(this).parent().prev().find(".price").text();
+  let total = 0;
+  if (count > 1) {
+    $(this).prev().val(--count);
+    total = count * parseInt(myprice.toString().replace(",", ""));
+  } else {
+    count = 1;
+    $(this).prev().val(count);
+    total = count * parseInt(myprice.toString().replace(",", ""));
+  }
+  $(this)
+    .parent()
+    .next()
+    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+
+  getTotal();
+});
+
+// 한 제품 total 금액 구하는 함수
+function getTotal() {
+  let total = 0;
+  $("tbody .myTotal").each(function () {
+    $(this).text().toString().replace(",", "");
+    total += parseInt($(this).text().toString().replace(",", ""));
+  });
+  total = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  $("tfoot span").text(total);
+}
+
+$("body").on("click", "tbody .remove", function () {
+  let tRnum = $(this).parent().parent().index();
+  //console.log(tRnum);
+  cartList.splice(tRnum, 1);
+  localStorage.setItem("allItem", JSON.stringify(cartList));
+
+  listing();
+});
+
+$("body").on("click", ".order button", function () {
+  let myid = sessionStorage.getItem("userid");
+  if (!myid) {
+    alert("로그인 후 구매 가능");
+    location.href = "./login.html";
+  } else {
+    location.href = "./buy.html";
+    localStorage.clear();
+  }
+});
 
 /*
 $("body").append(`
