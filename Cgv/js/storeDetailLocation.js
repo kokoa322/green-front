@@ -114,17 +114,16 @@ $.ajax({
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-                <a
-                  href="#"
+                <a href="#"
                   onclick="javascript:app.goLogin();return false;"
-                  class="btn_cart"
-                  >장바구니</a
-                >
-                <a href="#" onclick="javascript:app.goLogin(); return false;"
-                  >선물하기</a
-                ><a href="#" onclick="javascript:app.goLogin();return false;"
-                  >구매하기</a
-                >
+                  class="btn_cart">장바구니
+                </a>
+                <a href="#" onclick="javascript:app.goLogin(); return false;">
+                선물하기
+                </a>
+                <a href="#" onclick="javascript:app.goLogin();return false;">
+                구매하기
+                </a>
               </div>
             </div>
           </div>
