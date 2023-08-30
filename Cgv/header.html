@@ -26,8 +26,9 @@
       .nav_menu:hover .nav_overMenu { 
         /* 위 nav_menu로 */
         top: 40%;
-        transition: all 0.4s;
+        transition: all 0.3s;
       }
+
       .nav_menu:hover .nav_overMenu:hover .nav_overMenu{
         top: 40%;
       }
@@ -40,18 +41,20 @@
       }
 
       .empty_space {
-        width: 250%;
-        height: 500px;
+        width: 150%;
+        height: 350px;
         background-color: white;
         position: absolute;
         bottom: 100%;
         z-index: -2;
+        background: red;
+
       }
 
-      /* .nav_menu:hover .empty_space {
-        bottom: -943%;
-        transition: all 0.7s;
-      } */
+      .nav_menu:hover .empty_space {
+        top: 100%;
+        transition: all 0.3s;
+      }
     </style>
 
   </head>

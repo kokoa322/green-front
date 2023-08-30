@@ -95,7 +95,7 @@ body {
 
 .specialtheater_category_list {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .specialtheater_category_list li {
