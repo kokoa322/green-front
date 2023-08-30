@@ -7,22 +7,22 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global "table" column settings */
 
 .category_product_title {
-  border-bottom: 1px solid #000000;
   max-width: 980px;
   margin: 70px auto;
 
+  font-size: 36px;
+  color: #000;
   display: block;
   position: relative;
   width: 100%;
   margin-bottom: 20px;
   padding-bottom: 10px;
   font-family: "CJONLYONENEW";
-  font-weight: 500;
+  font-weight: 700;
   font-size: 28px;
   color: #000;
   line-height: 1em;
-  border-bottom: 1px solid #999;
-  padding-left: 90px;
+  border-bottom: 2px solid #000000;
 }
 
 .qty__plus,

@@ -8,9 +8,13 @@ function listing() {
     cartList.forEach((productInfo) => {
       $("#cartFor").append(`
     <div class="product">
+    
       <div class="product-image">
-        <img src="${productInfo.image}">
+      <a href="javascript:;">  
+        <img src="${productInfo.image}" class="imgHref">
+        </a> 
       </div>
+      
       <div class="product-details">
         <div class="product-title">${productInfo.productName}</div>
         <p class="product-description">${productInfo.productName}</p>
@@ -136,4 +140,15 @@ $("body").on("click", ".order button", function () {
     location.href = "./buy.html";
     localStorage.clear();
   }
+});
+
+$("body").on("click", ".product-image .imgHref", function () {
+  let productName = $(this)
+    .parent()
+    .parent()
+    .next()
+    .find(".product-title")
+    .text();
+
+  $(location).attr("href", `./storeDetail.html?target=${productName}`);
 });
