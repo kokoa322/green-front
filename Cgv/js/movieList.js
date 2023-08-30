@@ -13,7 +13,7 @@ $.ajax({
           <div class="wrap-movie-chart">
             <!-- Heading Map Multi -->
             <div class="tit-heading-wrap">
-              <h3>무비차트</h3>
+              <h3>상영예정작</h3>
             </div>
             <!-- //Heading Map Multi -->
             <!-- Sorting -->
