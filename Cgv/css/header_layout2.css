@@ -292,11 +292,14 @@ a {
 
 .nav.active .nav_overMenu {
   display: block;
+  
+
 }
 
 .dlNav_overMenu{
   display: flex;
   padding-top: 20px;
+  box-shadow: 5px 5px 5px rgba(127, 127, 127, 0.8);
 }
 
 .nav_overMenu {
@@ -307,23 +310,23 @@ a {
 }
 
 .nav_overMenu:nth-child(1){
-  padding: 0px 40px 0 0px;
+  padding: 0px 50px 0 10px;
   border-right: 1px solid #eee;
 }
 .nav_overMenu:nth-child(2){
-  padding: 0px 40px 0 40px;
+  padding: 0px 50px 0 50px;
   border-right: 1px solid #eee;
 }
 .nav_overMenu:nth-child(3){
-  padding: 0px 40px 0 40px;
+  padding: 0px 50px 0 50px;
   border-right: 1px solid #eee;
 }
 .nav_overMenu:nth-child(4){
-  padding: 0px 40px 0 40px;
+  padding: 0px 50px 0 50px;
   border-right: 1px solid #eee;
 }
 .nav_overMenu:nth-child(5){
-  padding: 0px 40px 0 40px;
+  padding: 0px 50px 0 50px;
 }
 
 .nav_overMenu:before {
