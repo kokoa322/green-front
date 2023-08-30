@@ -505,3 +505,39 @@ $("body").on("click", ".best_product_img_wrap ", function () {
     },
   });
 });
+
+$("body").on("click", ".btn_category_product_cart", function () {
+  let price = $(this)
+    .prev()
+    .find(
+      ".best_product_text_wrap .best_product_sale_price_wrap .store_deatail_source_price"
+    )
+    .text();
+
+  let total = price;
+  let image = $(this).prev().find(".best_product_img_wrap img").attr("src");
+
+  let count = 1;
+  let productName = $(this)
+    .prev()
+    .find(".best_product_img_wrap img")
+    .attr("alt");
+
+  let newItem = {
+    productName: productName,
+    price: price,
+    total: total.toString().replace(",", ""),
+    image: image,
+    count: count,
+  };
+
+  let itemList = JSON.parse(localStorage.getItem("allItem")); // allItem이라는게 없으니 null값으로 출력
+  if (itemList == null) {
+    itemList = [];
+  }
+
+  itemList.push(newItem);
+  localStorage.setItem("allItem", JSON.stringify(itemList));
+
+  $(location).attr("href", `./cart.html?newItem=${newItem}`);
+});

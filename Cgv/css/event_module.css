@@ -7,38 +7,47 @@
   flex-wrap: wrap;
   justify-content: stretch;
 }
+
 .sect-evt-item-list:before {
   content: none;
 }
+
 .sect-evt-item-list:after {
   content: none;
 }
+
 .sect-evt-item-list li {
   flex: 1 1 auto;
   /* width: 33%; border:1px solid #dddfe2; */
   margin: 0 0 13px 2%;
   background: #fff;
 }
+
 .sect-evt-item-list li:nth-child(3n) {
   margin: 0 0 13px 2%;
 }
+
 .sect-evt-item-list li:nth-child(3n + 1) {
   margin: 0 0 13px 0;
 }
+
 .sect-evt-item-list li a {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .sect-evt-item-list li img {
   width: 312px;
   height: 200px;
   border: 1px solid #dddfe2;
 }
+
 .sect-evt-item-list li .evt-thumb {
   width: 312px;
   height: 200px;
 }
+
 .sect-evt-item-list li .evt-desc {
   min-height: 90px;
   padding-bottom: 17px;
@@ -61,17 +70,20 @@
   white-space: normal;
   letter-spacing: -1px;
 }
+
 .sect-evt-item-list li .txt2 {
   color: #6a6f77;
   font-size: 13px;
   padding: 17px 11px 0 11px;
   letter-spacing: -0.5px;
 }
+
 .sect-evt-item-list li .txt2 em,
 .sect-evt-item-list li .txt2 .sponsorFpDday {
   font-style: normal;
   color: #fb4357;
 }
+
 /*
  h3 초기화
   h3{height:auto;margin:0;background:none;line-height:1.2;text-align:left;} */
@@ -83,21 +95,42 @@
 /* 리스트 디폴트 */
 .cols-content {
   margin-top: 25px;
-} /* 20140508 LineMap 상단 이동으로 인한 값 추가 */
-* + html .cols-content {
+}
+
+/* 20140508 LineMap 상단 이동으로 인한 값 추가 */
+*+html .cols-content {
   zoom: 1;
 }
+
 .cols-content:after {
   content: "";
   clear: both;
   display: block;
 }
+
 .cols-content .col-detail {
   position: relative;
   width: 800px;
   float: left;
 }
+
 .cols-content .col-aside {
   width: 160px;
   float: right;
+}
+
+.btn-item-more {
+  width: 980px;
+  height: 50px;
+  text-align: center;
+  background-color: #f8f8f8;
+  margin: 36px 0 50px 0
+}
+
+.add{
+  display: none;
+}
+
+.show{
+  display: flex;
 }
