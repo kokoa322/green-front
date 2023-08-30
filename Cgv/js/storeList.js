@@ -15,7 +15,7 @@ $.ajax({
           <div class="category_product_wrap">
             <ul class="category_product_list">
               <li>
-                <strong class="category_product_title"
+                <strong class="category_product_title" style="border-bottom: 2px solid #000; font-weight: 700;"
                   >패키지</strong
                 >
                 <ul class="category_product_inner_list">
@@ -178,7 +178,7 @@ $.ajax({
               </li>
 
               <li>
-                <strong class="category_product_title"
+                <strong class="category_product_title" style="border-bottom: 2px solid #000; font-weight: 700;"
                   >음료
                   </strong
                 >
@@ -315,7 +315,7 @@ $.ajax({
                 </ul>
               </li>
               <li>
-                <strong class="category_product_title"
+                <strong class="category_product_title" style="border-bottom: 2px solid #000; font-weight: 700;"
                   >스낵
                   </strong
                 >

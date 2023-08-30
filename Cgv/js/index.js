@@ -138,32 +138,35 @@ $.ajax({
                 <li>
                   <dl class='giftcon_list'>
                     <dd>
-                      <a href='/culture-event/popcorn-store/product-detail.aspx?GG_NO=100344'>
+                      <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
                             src='../Cgv/img/16778218049340.jpg' alt='${storeInfo[1].name}'></div>
                         <div class='giftcon_info_wrap'>
                              <span>${storeInfo[1].name}</span>
-                          <strong>${storeInfo[1].price}원</strong>
+                          <strong>${storeInfo[1].price.toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
                     </dd>
                     <dd>
-                      <a href='/culture-event/popcorn-store/product-detail.aspx?GG_NO=100343'>
+                      <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
-                            src='../Cgv/img/16778214176450.jpg' alt='나랑 너 패키지'></div>
+                            src='../Cgv/img/16778214176450.jpg' alt='${storeInfo[2].name}'></div>
                         <div class='giftcon_info_wrap'>
-                          <span>나랑 너 패키지</span>
-                          <strong>34,000원</strong>
+                          <span>${storeInfo[2].name}</span>
+                          <strong>${storeInfo[2].price.toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
                     </dd>
                     <dd>
-                      <a href='/culture-event/popcorn-store/product-detail.aspx?GG_NO=100342'>
+                      <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
-                            src='../Cgv/img/16778206767040.jpg' alt='좋은 날 패키지'></div>
+                            src='../Cgv/img/16778206767040.jpg' alt='${storeInfo[3].name}'></div>
                         <div class='giftcon_info_wrap'>
-                          <span>좋은 날 패키지</span>
-                          <strong>18,000원</strong>
+                          <span>${storeInfo[3].name}</span>
+                          <strong>${storeInfo[3].price.toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
                     </dd>
@@ -215,5 +218,14 @@ $.ajax({
     error(xhr) {
       alert(xhr.status + "/" + xhr.errorText);
     },
+  });
+  
+  $("body").on("click", ".img_wrap", function () {
+    let productName = $(this)
+      .next()
+      .find("span")
+      .text();
+  
+    $(location).attr("href", `./storeDetail.html?target=${productName}`);
   });
   
