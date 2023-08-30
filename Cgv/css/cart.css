@@ -6,15 +6,30 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 /* Global settings */
 /* Global "table" column settings */
 
+.category_product_title {
+  border-bottom: 1px solid #000000;
+  max-width: 980px;
+  margin: 70px auto;
+
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+  line-height: 1em;
+  border-bottom: 1px solid #999;
+}
+
 .category_product_list {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .shopping-cart {
-  max-width: 1200px;
-  text-align: center;
-  justify-content: center;
-  position: relative;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -90,7 +105,7 @@ label {
 }
 
 .shopping-cart {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 /* Column headers */
