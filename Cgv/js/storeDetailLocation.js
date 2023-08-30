@@ -50,43 +50,7 @@ $.ajax({
                 </dd>
                 <dt>원산지</dt>
                 <dd>${origin}<br /></dd>
-                <dt>상품교환</dt>
-                <dd>
-                  <dl
-                    class="com_custom_selectbox com_custom_selectbox_available_viewcgv"
-                  >
-                    <dt>
-                      <a
-                        href="#none"
-                        class="btn_available_viewcgv btn_available_viewcgv1"
-                        onclick="javascript:$.fn.comCloseSelectbox('com_custom_selectbox_btn');$.fn.comSelectbox(this, 'active')"
-                        >사용가능 CGV 보기</a
-                      >
-                    </dt>
-                    <dd style="display: none">
-                      <a
-                        href="#none"
-                        class="btn_select0"
-                        onclick="javascript:fnGetTheater(100341);"
-                        >CGV 영화관람권</a
-                      >
-                    </dd>
-                    <dd style="display: none">
-                      <a
-                        href="#none"
-                        class="btn_select0"
-                        onclick="javascript:fnGetTheater(100324);"
-                        >더블콤보</a
-                      >
-                    </dd>
-                  </dl>
-                  <a
-                    href="#none"
-                    class="btn_nutritionFacts"
-                    data-popup="popNutritionFacts"
-                    >영양성분표시</a
-                  >
-                </dd>
+                
               </dl>
               <div class="category_product_detail_price_wrap">
                 <div class="com_form_number">

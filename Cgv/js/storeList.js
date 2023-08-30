@@ -185,21 +185,25 @@ $.ajax({
                 <ul class="category_product_inner_list">
                   <li class=" ">
                     <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100083"
+                      href="javascript:;"
                       class="btn_category_product"
                     >
                       <span class="best_product_img_wrap"
                         ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16680718728370.jpg"
-                          alt="탄산음료(M)"
+                          src="${storeInfo[4].image}"
+                          alt="${storeInfo[4].name}"
                       /></span>
                       <span class="best_product_text_wrap">
-                        <span class="best_product_text_title">탄산음료(M)</span>
+                        <span class="best_product_text_title">${
+                          storeInfo[4].name
+                        }</span>
                         <span class="best_product_text_name"
-                          >시원한 탄산음료와 함께 스트레스도 날리세요</span
+                          >${storeInfo[4].explaination}</span
                         >
                         <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">2,500</span>
+                          <span class="store_deatail_source_price">${storeInfo[4].price
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         </span>
                       </span>
                     </a>
@@ -224,23 +228,25 @@ $.ajax({
                   </li>
                   <li class="">
                     <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100089"
+                      href="javascript:;"
                       class="btn_category_product"
                     >
                       <span class="best_product_img_wrap"
                         ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16784337938330.jpg"
-                          alt="아메리카노(HOT)"
+                        src="${storeInfo[9].image}"
+                        alt="${storeInfo[9].name}"
                       /></span>
                       <span class="best_product_text_wrap">
                         <span class="best_product_text_title"
-                          >아메리카노(HOT)</span
+                          >${storeInfo[9].name}</span
                         >
                         <span class="best_product_text_name"
-                          >현대인의 필수품</span
+                          >${storeInfo[9].explaination}</span
                         >
                         <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">3,500</span>
+                          <span class="store_deatail_source_price">${storeInfo[9].price
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         </span>
                       </span>
                     </a>
@@ -265,23 +271,25 @@ $.ajax({
                   </li>
                   <li class=" ">
                     <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100090"
+                      href="javascript:;"
                       class="btn_category_product"
                     >
                       <span class="best_product_img_wrap"
                         ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16784335517690.jpg"
-                          alt="아메리카노(ICE)"
+                        src="${storeInfo[7].image}"
+                        alt="${storeInfo[7].name}"
                       /></span>
                       <span class="best_product_text_wrap">
                         <span class="best_product_text_title"
-                          >아메리카노(ICE)</span
+                          >${storeInfo[7].name}</span
                         >
                         <span class="best_product_text_name"
-                          >현대인의 필수품</span
+                          >${storeInfo[7].explaination}</span
                         >
                         <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">4,000</span>
+                          <span class="store_deatail_source_price">${storeInfo[7].price
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         </span>
                       </span>
                     </a>
@@ -312,127 +320,135 @@ $.ajax({
                   </strong
                 >
                 <ul class="category_product_inner_list">
-                  <li class="">
-                    <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100017"
-                      class="btn_category_product"
+                <li class="">
+                <a
+                  href="javascript:;"
+                  class="btn_category_product"
+                >
+                  <span class="best_product_img_wrap"
+                    ><img
+                    src="${storeInfo[5].image}"
+                    alt="${storeInfo[5].name}"
+                  /></span>
+                  <span class="best_product_text_wrap">
+                    <span class="best_product_text_title"
+                      >${storeInfo[5].name}</span
                     >
-                      <span class="best_product_img_wrap"
-                        ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16751302789660.jpg"
-                          alt="칠리치즈나쵸"
-                      /></span>
-                      <span class="best_product_text_wrap">
-                        <span class="best_product_text_title"
-                          >칠리치즈나쵸</span
-                        >
-                        <span class="best_product_text_name"
-                          >바삭바삭 나쵸, 얼마나 맛있게요?</span
-                        >
-                        <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">4,900</span>
-                        </span>
-                      </span>
-                    </a>
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('1', '100017', '0', ''); return false;"
-                      class="btn_category_product_cart"
-                      >1</a
+                    <span class="best_product_text_name"
+                      >${storeInfo[5].explaination}</span
                     >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('2', '100017', '0', '1'); return false;"
-                      class="btn_category_product_gift"
-                      >2</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('3', '100017', '0', '1'); return false;"
-                      class="btn_category_product_buy"
-                      >3</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100092"
-                      class="btn_category_product"
-                    >
-                      <span class="best_product_img_wrap"
-                        ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/15464120856450.jpg"
-                          alt="플레인핫도그"
-                      /></span>
-                      <span class="best_product_text_wrap">
-                        <span class="best_product_text_title"
-                          >플레인핫도그</span
-                        >
-                        <span class="best_product_text_name">플레인핫도그</span>
-                        <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">4,500</span>
-                        </span>
-                      </span>
-                    </a>
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('1', '100092', '0', ''); return false;"
-                      class="btn_category_product_cart"
-                      >1</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('2', '100092', '0', '1'); return false;"
-                      class="btn_category_product_gift"
-                      >2</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('3', '100092', '0', '1'); return false;"
-                      class="btn_category_product_buy"
-                      >3</a
-                    >
-                  </li>
-                  <li class=" ">
-                    <a
-                      href="/culture-event/popcorn-store/product-detail.aspx?GG_NO=100015"
-                      class="btn_category_product"
-                    >
-                      <span class="best_product_img_wrap"
-                        ><img
-                          src="http://img.cgv.co.kr/GiftStore/Product/Pc/List/16757490557660.jpg"
-                          alt="오징어(완제품)"
-                      /></span>
-                      <span class="best_product_text_wrap">
-                        <span class="best_product_text_title"
-                          >오징어(완제품)</span
-                        >
-                        <span class="best_product_text_name"
-                          >한봉지로는 모자라요</span
-                        >
-                        <span class="best_product_sale_price_wrap">
-                          <span class="store_deatail_source_price">3,500</span>
-                        </span>
-                      </span>
-                    </a>
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('1', '100015', '0', ''); return false;"
-                      class="btn_category_product_cart"
-                      >1</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('2', '100015', '0', '1'); return false;"
-                      class="btn_category_product_gift"
-                      >2</a
-                    >
-                    <a
-                      href="#none"
-                      onclick="javascript:fnMoveLink('3', '100015', '0', '1'); return false;"
-                      class="btn_category_product_buy"
-                      >3</a
-                    >
-                  </li>
+                    <span class="best_product_sale_price_wrap">
+                      <span class="store_deatail_source_price">${storeInfo[5].price
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="#none"
+                  onclick="javascript:fnMoveLink('1', '100089', '0', ''); return false;"
+                  class="btn_category_product_cart"
+                  >1</a
+                >
+                <a
+                  href="#none"
+                  onclick="javascript:fnMoveLink('2', '100089', '0', '1'); return false;"
+                  class="btn_category_product_gift"
+                  >2</a
+                >
+                <a
+                  href="#none"
+                  onclick="javascript:fnMoveLink('3', '100089', '0', '1'); return false;"
+                  class="btn_category_product_buy"
+                  >3</a
+                >
+              </li>
+              <li class="">
+              <a
+                href="javascript:;"
+                class="btn_category_product"
+              >
+                <span class="best_product_img_wrap"
+                  ><img
+                  src="${storeInfo[6].image}"
+                  alt="${storeInfo[6].name}"
+                /></span>
+                <span class="best_product_text_wrap">
+                  <span class="best_product_text_title"
+                    >${storeInfo[6].name}</span
+                  >
+                  <span class="best_product_text_name"
+                    >${storeInfo[6].explaination}</span
+                  >
+                  <span class="best_product_sale_price_wrap">
+                    <span class="store_deatail_source_price">${storeInfo[6].price
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                  </span>
+                </span>
+              </a>
+              <a
+                href="#none"
+                onclick="javascript:fnMoveLink('1', '100089', '0', ''); return false;"
+                class="btn_category_product_cart"
+                >1</a
+              >
+              <a
+                href="#none"
+                onclick="javascript:fnMoveLink('2', '100089', '0', '1'); return false;"
+                class="btn_category_product_gift"
+                >2</a
+              >
+              <a
+                href="#none"
+                onclick="javascript:fnMoveLink('3', '100089', '0', '1'); return false;"
+                class="btn_category_product_buy"
+                >3</a
+              >
+            </li>
+            <li class="">
+            <a
+              href="javascript:;"
+              class="btn_category_product"
+            >
+              <span class="best_product_img_wrap"
+                ><img
+                src="${storeInfo[8].image}"
+                alt="${storeInfo[8].name}"
+              /></span>
+              <span class="best_product_text_wrap">
+                <span class="best_product_text_title"
+                  >${storeInfo[8].name}</span
+                >
+                <span class="best_product_text_name"
+                  >${storeInfo[8].explaination}</span
+                >
+                <span class="best_product_sale_price_wrap">
+                  <span class="store_deatail_source_price">${storeInfo[6].price
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
+                </span>
+              </span>
+            </a>
+            <a
+              href="#none"
+              onclick="javascript:fnMoveLink('1', '100089', '0', ''); return false;"
+              class="btn_category_product_cart"
+              >1</a
+            >
+            <a
+              href="#none"
+              onclick="javascript:fnMoveLink('2', '100089', '0', '1'); return false;"
+              class="btn_category_product_gift"
+              >2</a
+            >
+            <a
+              href="#none"
+              onclick="javascript:fnMoveLink('3', '100089', '0', '1'); return false;"
+              class="btn_category_product_buy"
+              >3</a
+            >
+          </li>
                 </ul>
               </li>
             </ul>
@@ -440,7 +456,7 @@ $.ajax({
 
           <div class="info_use_wrap">
             <a
-              href="/culture-event/popcorn-store/store-guide.aspx"
+              href="javascript:;"
               class="btn_info_use"
             >
               <span class="btn_info_use_title">CGV 기프트샵 이용안내</span>
@@ -473,23 +489,19 @@ $.ajax({
   },
 });
 
-$("body").on(
-  "click",
-  ".storeDetail .btn_category_product .best_product_img_wrap ",
-  function () {
-    let target = $(this).find("img").attr("alt");
-    let info = "";
-    $.ajax({
-      type: "GET",
-      url: "./json/storeData.json",
-      dataType: "json",
-      success: function (response) {
-        info = response.store;
-        $(location).attr("href", `./storeDetail.html?target=${target}`);
-      },
-      error: function (xhr) {
-        alert(xhr.status + "/" + xhr.errorText);
-      },
-    });
-  }
-);
+$("body").on("click", ".best_product_img_wrap ", function () {
+  let target = $(this).find("img").attr("alt");
+  let info = "";
+  $.ajax({
+    type: "GET",
+    url: "./json/storeData.json",
+    dataType: "json",
+    success: function (response) {
+      info = response.store;
+      $(location).attr("href", `./storeDetail.html?target=${target}`);
+    },
+    error: function (xhr) {
+      alert(xhr.status + "/" + xhr.errorText);
+    },
+  });
+});

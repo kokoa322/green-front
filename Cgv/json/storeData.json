@@ -48,7 +48,7 @@
     },
     {
       "name": "칠리치즈나쵸",
-      "productComposition": "칠리치즈나쵸",
+      "productComposition": "칠리치즈나쭁!",
       "expirationPeriod": "구매일로부터 6개월 이내",
       "price": 4900,
       "origin": "치즈(치즈: 미국산)",
@@ -82,6 +82,15 @@
       "origin": "오징어(징징이: 울릉도)",
       "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16757490561250.jpg",
       "explaination": "한봉지로는 모자라요"
+    },
+    {
+      "name": "핑크레몬에이드",
+      "productComposition": "핑크레몬에이드 1",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 5000,
+      "origin": "별의 커비",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16784396509830.jpg",
+      "explaination": "커비레몬에이드"
     }
   ]
 }
