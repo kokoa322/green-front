@@ -31,7 +31,9 @@ $.ajax({
                     <span class="best_product_text_title"
                       >${storeInfo[0].name}</span
                     >
-                    <span class="best_product_text_name"></span>
+                    <span class="best_product_text_name"
+                      >${storeInfo[0].productComposition}</span
+                    >
                     <span class="best_product_sale_price_wrap">
                       <span class="store_deatail_source_price">${storeInfo[0].price
                         .toString()
@@ -69,7 +71,9 @@ $.ajax({
                     <span class="best_product_text_title"
                       >${storeInfo[1].name}</span
                     >
-                    <span class="best_product_text_name"></span>
+                    <span class="best_product_text_name"
+                    >${storeInfo[1].productComposition}</span
+                  >
                     <span class="best_product_sale_price_wrap">
                       <span class="store_deatail_source_price">${storeInfo[1].price
                         .toString()
@@ -107,7 +111,9 @@ $.ajax({
                     <span class="best_product_text_title"
                       >${storeInfo[2].name}</span
                     >
-                    <span class="best_product_text_name"></span>
+                    <span class="best_product_text_name"
+                    >${storeInfo[2].productComposition}</span
+                  >
                     <span class="best_product_sale_price_wrap">
                       <span class="store_deatail_source_price">${storeInfo[2].price
                         .toString()
@@ -145,7 +151,9 @@ $.ajax({
                     <span class="best_product_text_title"
                       >${storeInfo[3].name}</span
                     >
-                    <span class="best_product_text_name"></span>
+                     <span class="best_product_text_name"
+                      >${storeInfo[3].productComposition}</span
+                    >
                     <span class="best_product_sale_price_wrap">
                       <span class="store_deatail_source_price">${storeInfo[3].price
                         .toString()
@@ -198,8 +206,9 @@ $.ajax({
                           storeInfo[4].name
                         }</span>
                         <span class="best_product_text_name"
-                          >${storeInfo[4].name}</span
+                          >${storeInfo[4].explaination}</span
                         >
+                       
                         <span class="best_product_sale_price_wrap">
                           <span class="store_deatail_source_price">${storeInfo[4].price
                             .toString()
@@ -523,12 +532,18 @@ $("body").on("click", ".btn_category_product_cart", function () {
     .find(".best_product_img_wrap img")
     .attr("alt");
 
+  let productComposition = $(this)
+    .prev()
+    .find(".best_product_text_wrap .best_product_text_name")
+    .text();
+
   let newItem = {
     productName: productName,
     price: price,
     total: total.toString().replace(",", ""),
     image: image,
     count: count,
+    productComposition: productComposition,
   };
 
   let itemList = JSON.parse(localStorage.getItem("allItem")); // allItem이라는게 없으니 null값으로 출력
