@@ -22,6 +22,16 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   color: #000;
   line-height: 1em;
   border-bottom: 1px solid #999;
+  padding-left: 90px;
+}
+
+.qty__plus,
+.qty__minus {
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
 }
 
 .category_product_list {
@@ -41,27 +51,31 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 .product-details {
   float: left;
   width: 37%;
+  text-align: center;
 }
 
 .product-price {
   float: left;
   width: 12%;
+  text-align: center;
 }
 
 .product-quantity {
   float: left;
   width: 10%;
+  text-align: center;
 }
 
 .product-removal {
   float: left;
   width: 9%;
+  text-align: center;
 }
 
 .product-line-price {
   float: left;
   width: 12%;
-  text-align: right;
+  text-align: center;
 }
 
 /* This is used as the traditional .clearfix class */
@@ -184,7 +198,7 @@ label {
   border: 0;
   margin-top: 20px;
   padding: 6px 25px;
-  background-color: #c66;
+  background-color: rgb(197, 16, 6);
   color: #fff;
   font-size: 25px;
   border-radius: 3px;
