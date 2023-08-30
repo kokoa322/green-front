@@ -77,7 +77,7 @@ $("body").on("click", ".qty__plus", function () {
     .parent()
     .next()
     .next()
-    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
   getTotal();
 });
@@ -99,7 +99,7 @@ $("body").on("click", ".qty__minus", function () {
     .parent()
     .next()
     .next()
-    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    .text(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
   getTotal();
 });
@@ -112,8 +112,7 @@ function getTotal() {
     total += parseInt($(this).text().toString().replace(",", ""));
   });
   total = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  alert(total);
-  $(".totals-value").text(total);
+  $(".totals-value").text(total + "원");
 }
 
 // 삭제버튼
