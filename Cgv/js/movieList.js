@@ -38,15 +38,6 @@ $.ajax({
                         <!-- <span class="ico-grade 15">15</span> -->
                       </span>
                     </a>
-                    <span class="screentype">
-                      <a
-                        class="imax"
-                        href="#"
-                        title="IMAX 상세정보 바로가기"
-                        data-regioncode="07"
-                        >IMAX</a
-                      >
-                    </span>
                   </div>
   
                   <div class="box-contents">
@@ -69,13 +60,6 @@ $.ajax({
                         <span>개봉</span>
                       </strong>
                     </span>
-                    <span class="like">
-                      <a
-                        class="link-reservation"
-                        href="/ticket/?MOVIE_CD=20033397&amp;MOVIE_CD_GROUP=20033175"
-                        >예매</a
-                      >
-                    </span>
                   </div>
                 </li>
   
@@ -94,15 +78,6 @@ $.ajax({
                       <!-- <span class="ico-grade 15">15</span> -->
                     </span>
                   </a>
-                  <span class="screentype">
-                    <a
-                      class="imax"
-                      href="#"
-                      title="IMAX 상세정보 바로가기"
-                      data-regioncode="07"
-                      >IMAX</a
-                    >
-                  </span>
                 </div>
 
                 <div class="box-contents">
@@ -125,13 +100,6 @@ $.ajax({
                       <span>개봉</span>
                     </strong>
                   </span>
-                  <span class="like">
-                    <a
-                      class="link-reservation"
-                      href="/ticket/?MOVIE_CD=20033397&amp;MOVIE_CD_GROUP=20033175"
-                      >예매</a
-                    >
-                  </span>
                 </div>
               </li>
   
@@ -150,15 +118,6 @@ $.ajax({
                         <!-- <span class="ico-grade 15">15</span> -->
                       </span>
                     </a>
-                    <span class="screentype">
-                      <a
-                        class="imax"
-                        href="#"
-                        title="IMAX 상세정보 바로가기"
-                        data-regioncode="07"
-                        >IMAX</a
-                      >
-                    </span>
                   </div>
   
                   <div class="box-contents">
@@ -181,13 +140,6 @@ $.ajax({
                         <span>개봉</span>
                       </strong>
                     </span>
-                    <span class="like">
-                      <a
-                        class="link-reservation"
-                        href="/ticket/?MOVIE_CD=20033397&amp;MOVIE_CD_GROUP=20033175"
-                        >예매</a
-                      >
-                    </span>
                   </div>
                 </li>
                 <li>
@@ -205,15 +157,6 @@ $.ajax({
                         <!-- <span class="ico-grade 15">15</span> -->
                       </span>
                     </a>
-                    <span class="screentype">
-                      <a
-                        class="imax"
-                        href="#"
-                        title="IMAX 상세정보 바로가기"
-                        data-regioncode="07"
-                        >IMAX</a
-                      >
-                    </span>
                   </div>
   
                   <div class="box-contents">
@@ -236,13 +179,6 @@ $.ajax({
                         <span>개봉</span>
                       </strong>
                     </span>
-                    <span class="like">
-                      <a
-                        class="link-reservation"
-                        href="/ticket/?MOVIE_CD=20033397&amp;MOVIE_CD_GROUP=20033175"
-                        >예매</a
-                      >
-                    </span>
                   </div>
                 </li>
               </ol>
@@ -262,9 +198,6 @@ $.ajax({
                         <!-- <span class="ico-grade 15">15</span> -->
                       </span>
                     </a>
-                    <span class="screentype">
-                      <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-                    </span>
                   </div>
                   <div class="box-contents">
                     <a href="/movies/detail-view/?midx=87136">
@@ -286,13 +219,6 @@ $.ajax({
                         <span>개봉</span>
                       </strong>
                     </span>
-                    <span class="like">
-                      <a
-                        class="link-reservation"
-                        href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                        >예매</a
-                      >
-                    </span>
                   </div>
                 </li>
   
@@ -311,9 +237,6 @@ $.ajax({
                       <!-- <span class="ico-grade 15">15</span> -->
                     </span>
                   </a>
-                  <span class="screentype">
-                    <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-                  </span>
                 </div>
                 <div class="box-contents">
                   <a href="/movies/detail-view/?midx=87136">
@@ -335,13 +258,6 @@ $.ajax({
                       <span>개봉</span>
                     </strong>
                   </span>
-                  <span class="like">
-                    <a
-                      class="link-reservation"
-                      href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                      >예매</a
-                    >
-                  </span>
                 </div>
               </li>
   
@@ -360,9 +276,6 @@ $.ajax({
                     <!-- <span class="ico-grade 15">15</span> -->
                   </span>
                 </a>
-                <span class="screentype">
-                  <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-                </span>
               </div>
               <div class="box-contents">
                 <a href="/movies/detail-view/?midx=87136">
@@ -385,12 +298,6 @@ $.ajax({
                   </strong>
                 </span>
                 <span class="like">
-                  <a
-                    class="link-reservation"
-                    href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                    >예매</a
-                  >
-                </span>
               </div>
             </li>
   
@@ -409,9 +316,6 @@ $.ajax({
                   <!-- <span class="ico-grade 15">15</span> -->
                 </span>
               </a>
-              <span class="screentype">
-                <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-              </span>
             </div>
             <div class="box-contents">
               <a href="/movies/detail-view/?midx=87136">
@@ -434,12 +338,6 @@ $.ajax({
                 </strong>
               </span>
               <span class="like">
-                <a
-                  class="link-reservation"
-                  href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                  >예매</a
-                >
-              </span>
             </div>
           </li>
               </ol>
@@ -459,9 +357,6 @@ $.ajax({
                     <!-- <span class="ico-grade 15">15</span> -->
                   </span>
                 </a>
-                <span class="screentype">
-                  <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-                </span>
               </div>
               <div class="box-contents">
                 <a href="/movies/detail-view/?midx=87136">
@@ -483,13 +378,6 @@ $.ajax({
                     <span>개봉</span>
                   </strong>
                 </span>
-                <span class="like">
-                  <a
-                    class="link-reservation"
-                    href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                    >예매</a
-                  >
-                </span>
               </div>
             </li>
   
@@ -508,9 +396,6 @@ $.ajax({
                   <!-- <span class="ico-grade 15">15</span> -->
                 </span>
               </a>
-              <span class="screentype">
-                <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-              </span>
             </div>
             <div class="box-contents">
               <a href="/movies/detail-view/?midx=87136">
@@ -532,13 +417,6 @@ $.ajax({
                   <span>개봉</span>
                 </strong>
               </span>
-              <span class="like">
-                <a
-                  class="link-reservation"
-                  href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                  >예매</a
-                >
-              </span>
             </div>
           </li>
   
@@ -557,9 +435,6 @@ $.ajax({
                 <!-- <span class="ico-grade 15">15</span> -->
               </span>
             </a>
-            <span class="screentype">
-              <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-            </span>
           </div>
           <div class="box-contents">
             <a href="/movies/detail-view/?midx=87136">
@@ -581,13 +456,6 @@ $.ajax({
                 <span>개봉</span>
               </strong>
             </span>
-            <span class="like">
-              <a
-                class="link-reservation"
-                href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-                >예매</a
-              >
-            </span>
           </div>
         </li>
   
@@ -606,10 +474,7 @@ $.ajax({
               <!-- <span class="ico-grade 15">15</span> -->
             </span>
           </a>
-          <span class="screentype">
-            <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-          </span>
-        </div>
+         </div>
         <div class="box-contents">
           <a href="/movies/detail-view/?midx=87136">
             <strong class="title">${movieListInfo[4].name}</strong>
@@ -630,13 +495,6 @@ $.ajax({
               <span>개봉</span>
             </strong>
           </span>
-          <span class="like">
-            <a
-              class="link-reservation"
-              href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-              >예매</a
-            >
-          </span>
         </div>
       </li>
   
@@ -655,9 +513,6 @@ $.ajax({
             <!-- <span class="ico-grade 15">15</span> -->
           </span>
         </a>
-        <span class="screentype">
-          <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-        </span>
       </div>
       <div class="box-contents">
         <a href="/movies/detail-view/?midx=87136">
@@ -679,13 +534,6 @@ $.ajax({
             <span>개봉</span>
           </strong>
         </span>
-        <span class="like">
-          <a
-            class="link-reservation"
-            href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-            >예매</a
-          >
-        </span>
       </div>
     </li>
   
@@ -704,9 +552,6 @@ $.ajax({
           <!-- <span class="ico-grade 15">15</span> -->
         </span>
       </a>
-      <span class="screentype">
-        <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-      </span>
     </div>
     <div class="box-contents">
       <a href="/movies/detail-view/?midx=87136">
@@ -728,13 +573,6 @@ $.ajax({
           <span>개봉</span>
         </strong>
       </span>
-      <span class="like">
-        <a
-          class="link-reservation"
-          href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-          >예매</a
-        >
-      </span>
     </div>
   </li>
   
@@ -753,9 +591,6 @@ $.ajax({
         <!-- <span class="ico-grade 15">15</span> -->
       </span>
     </a>
-    <span class="screentype">
-      <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-    </span>
   </div>
   <div class="box-contents">
     <a href="/movies/detail-view/?midx=87136">
@@ -777,13 +612,6 @@ $.ajax({
         <span>개봉</span>
       </strong>
     </span>
-    <span class="like">
-      <a
-        class="link-reservation"
-        href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-        >예매</a
-      >
-    </span>
   </div>
 </li>
   
@@ -802,9 +630,6 @@ $.ajax({
       <!-- <span class="ico-grade 15">15</span> -->
     </span>
   </a>
-  <span class="screentype">
-    <a class="forDX" href="#" data-regioncode="4D14">4DX</a>
-  </span>
 </div>
 <div class="box-contents">
   <a href="/movies/detail-view/?midx=87136">
@@ -825,13 +650,6 @@ $.ajax({
     ${movieListInfo[1].releaseDate}
       <span>개봉</span>
     </strong>
-  </span>
-  <span class="like">
-    <a
-      class="link-reservation"
-      href="/ticket/?MOVIE_CD=20033004&amp;MOVIE_CD_GROUP=20033004"
-      >예매</a
-    >
   </span>
 </div>
 </li>
