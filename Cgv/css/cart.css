@@ -58,24 +58,28 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   float: left;
   width: 12%;
   text-align: center;
+  padding-top: 30px;
 }
 
 .product-quantity {
   float: left;
   width: 10%;
   text-align: center;
+  padding-top: 30px;
 }
 
 .product-removal {
   float: left;
   width: 9%;
   text-align: center;
+  padding-top: 30px;
 }
 
 .product-line-price {
   float: left;
   width: 12%;
   text-align: center;
+  padding-top: 30px;
 }
 
 /* This is used as the traditional .clearfix class */
@@ -125,6 +129,7 @@ label {
 
 /* Column headers */
 .column-labels label {
+  padding-top: 30px;
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid #eee;
@@ -149,6 +154,7 @@ label {
 }
 .product .product-details .product-title {
   margin-right: 20px;
+  margin-top: 30px;
 }
 .product .product-details .product-description {
   margin: 5px 20px 5px 0;

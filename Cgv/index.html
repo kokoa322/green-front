@@ -72,53 +72,57 @@
       type="text/javascript"
       src="https://img.cgv.co.kr/R2014/js/swiper.min.js"
     ></script>
+
+    <title>영화 그 이상의 감동. CGV</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://img.cgv.co.kr/R2014/js/swiper.min.js"
+    ></script>
   </head>
 
-  <title>영화 그 이상의 감동. CGV</title>
-  <script src="./js/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-    integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="https://img.cgv.co.kr/R2014/js/swiper.min.js"></script>
-</head>
+  <body>
+    <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
 
-<body>
-  <script src="./js/index.js"></script>
-  <script src="./js/common.js"></script>
-  
-  <script>
-    $(".gallery .text a").on("mouseover", function () {
-      let alt2 = `../CGV/img/`;
-      alt2 += $(this).find("strong").text();
-      alt2 += `.png`;
-      console.log(alt2);
-
-      $(".image img").attr({
-        src: alt2,
-      });
-    </script>
     <script>
-      $("body").on("click", ".article1 ul li div a", function () {
-        let target = $(this).attr("alt");
-        let info = "";
-        $.ajax({
-          type: "GET",
-          url: "./json/movieData.json",
-          dataType: "json",
-          success: function (response) {
-            info = response.store;
-            $(location).attr("href", `./movieDetail.html?target=${target}`);
-          },
-          error: function (xhr) {
-            alert(xhr.status + "/" + xhr.errorText);
-          },
+      $(".gallery .text a").on("mouseover", function () {
+        let alt2 = `../CGV/img/`;
+        alt2 += $(this).find("strong").text();
+        alt2 += `.png`;
+        console.log(alt2);
+
+        $(".image img").attr({
+          src: alt2,
+        });
+
+        $("body").on("click", ".article1 ul li div a", function () {
+          let target = $(this).attr("alt");
+          let info = "";
+          $.ajax({
+            type: "GET",
+            url: "./json/movieData.json",
+            dataType: "json",
+            success: function (response) {
+              info = response.store;
+              $(location).attr("href", `./movieDetail.html?target=${target}`);
+            },
+            error: function (xhr) {
+              alert(xhr.status + "/" + xhr.errorText);
+            },
+          });
         });
       });
-    });
-  </script>
-  
-
-</body>
-
+    </script>
+  </body>
 </html>

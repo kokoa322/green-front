@@ -1,12 +1,12 @@
 $.ajax({
-    type: "GET",
-    url: "./json/storeData.json",
-    dataType: "json",
-    success(response) {
-      //해당하는 store의 정보들
-      let storeInfo = response.store;
-      //const [img1, img2, img3, img4] = movieInfo.movie[0].image;
-      $("body").append(
+  type: "GET",
+  url: "./json/storeData.json",
+  dataType: "json",
+  success(response) {
+    //해당하는 store의 정보들
+    let storeInfo = response.store;
+    //const [img1, img2, img3, img4] = movieInfo.movie[0].image;
+    $("body").append(
       `<div id="wrap">
       <header></header>
       <section id="section">
@@ -20,33 +20,33 @@ $.ajax({
             <li>
               <i class="cgvIcon etc age15">15</i>
               <div>
-                <h3>1. 오펜하이머</h3>
+                <h3>오펜하이머</h3>
                 <p>예매율 63.4%</p>
-                <a href="javascript:;" alt="오펜하이머">상세보기</a>
+                <a href="javascript:;" alt="오펜하이머" class ="target-movie">상세보기</a>
               </div>
             </li>
             <li>
               <i class="cgvIcon etc age15">15</i>
               <div>
-                <h3>2. 콘크리트 유토피아</h3>
+                <h3>콘크리트 유토피아</h3>
                 <p>예매율 63.4%</p>
-                <a href="javascript:;" alt="콘크리트 유토피아">상세보기</a>
+                <a href="javascript:;" alt="콘크리트 유토피아" class ="target-movie">상세보기</a>
               </div>
             </li>
             <li>
               <i class="cgvIcon etc age12">12</i>
               <div>
-                <h3>3. 달짝지근해</h3>
+                <h3>달짝지근해</h3>
                 <p>예매율 63.4%</p>
-                <a href="javascript:;" alt="달짝지근해">상세보기</a>
+                <a href="javascript:;" alt="달짝지근해" class ="target-movie">상세보기</a>
               </div>
             </li>
             <li>
               <i class="cgvIcon etc age15">15</i>
               <div>
-                <h3>4. 타겟</h3>
+                <h3>타겟</h3>
                 <p>예매율 63.4%</p>
-                <a href="javascript:;" alt="타겟">상세보기</a>
+                <a href="javascript:;" alt="타겟" class ="target-movie">상세보기</a>
               </div>
             </li>
           </ul>
@@ -140,10 +140,13 @@ $.ajax({
                     <dd>
                       <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
-                            src='../Cgv/img/16778218049340.jpg' alt='${storeInfo[1].name}'></div>
+                            src='../Cgv/img/16778218049340.jpg' alt='${
+                              storeInfo[1].name
+                            }'></div>
                         <div class='giftcon_info_wrap'>
                              <span>${storeInfo[1].name}</span>
-                          <strong>${storeInfo[1].price.toString()
+                          <strong>${storeInfo[1].price
+                            .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
@@ -151,10 +154,13 @@ $.ajax({
                     <dd>
                       <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
-                            src='../Cgv/img/16778214176450.jpg' alt='${storeInfo[2].name}'></div>
+                            src='../Cgv/img/16778214176450.jpg' alt='${
+                              storeInfo[2].name
+                            }'></div>
                         <div class='giftcon_info_wrap'>
                           <span>${storeInfo[2].name}</span>
-                          <strong>${storeInfo[2].price.toString()
+                          <strong>${storeInfo[2].price
+                            .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
@@ -162,10 +168,13 @@ $.ajax({
                     <dd>
                       <a href='javascript:;'>
                         <div class='img_wrap' data-scale=false><img
-                            src='../Cgv/img/16778206767040.jpg' alt='${storeInfo[3].name}'></div>
+                            src='../Cgv/img/16778206767040.jpg' alt='${
+                              storeInfo[3].name
+                            }'></div>
                         <div class='giftcon_info_wrap'>
                           <span>${storeInfo[3].name}</span>
-                          <strong>${storeInfo[3].price.toString()
+                          <strong>${storeInfo[3].price
+                            .toString()
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원</strong>
                         </div>
                       </a>
@@ -213,19 +222,21 @@ $.ajax({
     $("header").load("header.html");
     $("footer").load("footer.html");
   </script>`
-      );
-    },
-    error(xhr) {
-      alert(xhr.status + "/" + xhr.errorText);
-    },
-  });
-  
-  $("body").on("click", ".img_wrap", function () {
-    let productName = $(this)
-      .next()
-      .find("span")
-      .text();
-  
-    $(location).attr("href", `./storeDetail.html?target=${productName}`);
-  });
-  
+    );
+  },
+  error(xhr) {
+    alert(xhr.status + "/" + xhr.errorText);
+  },
+});
+
+$("body").on("click", ".img_wrap", function () {
+  let productName = $(this).next().find("span").text();
+
+  $(location).attr("href", `./storeDetail.html?target=${productName}`);
+});
+
+$("body").on("click", ".target-movie", function () {
+  let productName = $(this).attr("alt");
+
+  $(location).attr("href", `./movieDetail.html?target=${productName}`);
+});
