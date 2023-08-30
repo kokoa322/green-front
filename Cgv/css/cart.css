@@ -51,47 +51,31 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 .product-details {
   float: left;
   width: 37%;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
 .product-price {
   float: left;
   width: 12%;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
 .product-quantity {
   float: left;
   width: 10%;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
 .product-removal {
   float: left;
   width: 9%;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
 .product-line-price {
   float: left;
   width: 12%;
-<<<<<<< HEAD
   text-align: center;
-=======
-  text-align: right;
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
 /* This is used as the traditional .clearfix class */
@@ -214,11 +198,7 @@ label {
   border: 0;
   margin-top: 20px;
   padding: 6px 25px;
-<<<<<<< HEAD
   background-color: rgb(197, 16, 6);
-=======
-  background-color: #c66;
->>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
   color: #fff;
   font-size: 25px;
   border-radius: 3px;

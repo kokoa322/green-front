@@ -89,17 +89,6 @@ $.ajax({
                     <dd class="on">${releaseDate}</dd>
                   </dl>
                 </div>
-                <span class="like">
-                  <a class="link-count" href="javascript:void (0);"
-                    ><i class="sprite_preegg btn_md default"></i>장바구니</a
-                  >
-
-                  <a
-                    class="link-reservation"
-                    href="/ticket/?MOVIE_CD=20033397&amp;MOVIE_CD_GROUP=20033175"
-                    >예매</a
-                  >
-                </span>
               </div>
             </div>
 
