@@ -20,21 +20,23 @@ body {
   border-bottom: 2px solid #000;
   margin-bottom: 20px;
 }
-#section .allView{
-  position:relative;
+#section .allView {
+  position: relative;
 }
 
-#section .btn_allView{
-  position: absolute; top: 70%; right: 10px;
+#section .btn_allView {
+  position: absolute;
+  top: 70%;
+  right: 10px;
   padding: 5px 25px 4px 15px;
   font-size: 14px;
   color: #222;
-  background: transparent url(../image/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+  background: transparent url(../image/arrowR_8x13.png) calc(100% - 7px)
+    center/8px 13px scroll no-repeat;
   border: 1px solid #e2e2e2;
   border-radius: 15px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
 }
-
 
 #section .article1 ul {
   position: relative;
@@ -64,6 +66,7 @@ body {
   background-size: cover;
   color: #fff;
   position: relative;
+  border-radius: 10px;
 }
 #section .article1 ul li::before {
   content: "";
