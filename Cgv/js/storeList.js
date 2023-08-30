@@ -29,7 +29,7 @@ $.ajax({
                   /></span>
                   <span class="best_product_text_wrap">
                     <span class="best_product_text_title"
-                      >${storeInfo[0].productComposition}</span
+                      >${storeInfo[0].name}</span
                     >
                     <span class="best_product_text_name"></span>
                     <span class="best_product_sale_price_wrap">
@@ -67,7 +67,7 @@ $.ajax({
                   /></span>
                   <span class="best_product_text_wrap">
                     <span class="best_product_text_title"
-                      >${storeInfo[1].productComposition}</span
+                      >${storeInfo[1].name}</span
                     >
                     <span class="best_product_text_name"></span>
                     <span class="best_product_sale_price_wrap">
@@ -105,7 +105,7 @@ $.ajax({
                   /></span>
                   <span class="best_product_text_wrap">
                     <span class="best_product_text_title"
-                      >${storeInfo[2].productComposition}</span
+                      >${storeInfo[2].name}</span
                     >
                     <span class="best_product_text_name"></span>
                     <span class="best_product_sale_price_wrap">
@@ -143,7 +143,7 @@ $.ajax({
                   /></span>
                   <span class="best_product_text_wrap">
                     <span class="best_product_text_title"
-                      >${storeInfo[3].productComposition}</span
+                      >${storeInfo[3].name}</span
                     >
                     <span class="best_product_text_name"></span>
                     <span class="best_product_sale_price_wrap">
@@ -198,7 +198,7 @@ $.ajax({
                           storeInfo[4].name
                         }</span>
                         <span class="best_product_text_name"
-                          >${storeInfo[4].explaination}</span
+                          >${storeInfo[4].name}</span
                         >
                         <span class="best_product_sale_price_wrap">
                           <span class="store_deatail_source_price">${storeInfo[4].price

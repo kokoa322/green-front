@@ -17,7 +17,7 @@ function listing() {
       
       <div class="product-details">
         <div class="product-title">${productInfo.productName}</div>
-        <p class="product-description">${productInfo.productName}</p>
+        <p class="product-description">${productInfo.productComposition}</p>
       </div>
       <div class="product-price">${productInfo.price}원</div>
 

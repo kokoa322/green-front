@@ -43,7 +43,7 @@ $.ajax({
               </p>
               <dl class="category_product_detail_add_info">
                 <dt>상품구성</dt>
-                <dd>${productComposition}</dd>
+                <dd class = "category_product_detail_add_infoDD">${productComposition}</dd>
                 <dt>유효기간</dt>
                 <dd>
                   ${expirationPeriod}<br />
@@ -224,6 +224,9 @@ $("body").on("click", ".category_product_detail_btn_wrap #cart", function () {
   let image = $(".bxslider li img").attr("src");
   let count = $(".com_form_count").text();
   let productName = $(".category_product_detail_title").text();
+  let productComposition = $(
+    ".category_product_detail_add_info .category_product_detail_add_infoDD"
+  ).text();
 
   let newItem = {
     productName: productName,
@@ -231,6 +234,7 @@ $("body").on("click", ".category_product_detail_btn_wrap #cart", function () {
     total: total,
     image: image,
     count: count,
+    productComposition: productComposition,
   };
 
   let itemList = JSON.parse(localStorage.getItem("allItem")); // allItem이라는게 없으니 null값으로 출력
