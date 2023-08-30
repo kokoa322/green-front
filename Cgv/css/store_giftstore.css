@@ -945,15 +945,6 @@
 .best_product_list li:hover .btn_best_product_cart:hover {
   background-position: -157px -1px;
 }
-.best_product_list li:hover .btn_best_product_gift {
-  left: 85px;
-  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
-    scroll no-repeat;
-  z-index: 3;
-}
-.best_product_list li:hover .btn_best_product_gift:hover {
-  background-position: -209px -1px;
-}
 .best_product_list li:hover .btn_best_product_buy {
   right: 25px;
   background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
@@ -996,12 +987,6 @@
 }
 .best_product_list li.active .btn_best_product_cart:focus {
   background-position: -157px -1px;
-}
-.best_product_list li.active .btn_best_product_gift {
-  left: 85px;
-  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
-    scroll no-repeat;
-  z-index: 3;
 }
 .best_product_list li.active .btn_best_product_gift:focus {
   background-position: -209px -1px;
@@ -1270,17 +1255,12 @@
 .gift_recommend_box:hover .btn_gift_recommend_cart:hover {
   background-position: -157px -1px;
 }
-.gift_recommend_box:hover .btn_gift_recommend_gift {
-  left: 100px;
-  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
-    scroll no-repeat;
-  z-index: 3;
-}
+
 .gift_recommend_box:hover .btn_gift_recommend_gift:hover {
   background-position: -209px -1px;
 }
 .gift_recommend_box:hover .btn_gift_recommend_buy {
-  left: 160px;
+  left: 100px;
   background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
     scroll no-repeat;
   z-index: 4;
@@ -1319,17 +1299,8 @@
 .gift_recommend_list_wrap li.active .btn_gift_recommend_cart:focus {
   background-position: -157px -1px;
 }
-.gift_recommend_list_wrap li.active .btn_gift_recommend_gift {
-  left: 100px;
-  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
-    scroll no-repeat;
-  z-index: 3;
-}
-.gift_recommend_list_wrap li.active .btn_gift_recommend_gift:focus {
-  background-position: -209px -1px;
-}
 .gift_recommend_list_wrap li.active .btn_gift_recommend_buy {
-  left: 160px;
+  left: 100px;
   background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
     scroll no-repeat;
   z-index: 4;
@@ -1638,15 +1609,8 @@
 .category_product_inner_list li:hover .btn_category_product_cart:hover {
   background-position: -157px -1px;
 }
-.category_product_inner_list li:hover .btn_category_product_gift {
-  left: 275px;
-  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
-    scroll no-repeat;
-  z-index: 3;
-}
-
 .category_product_inner_list li:hover .btn_category_product_buy {
-  left: 335px;
+  left: 275px;
   background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
     scroll no-repeat;
   z-index: 4;
@@ -1828,7 +1792,7 @@
   .category_product_inner_list
   li:hover
   .btn_category_product_cart {
-  left: 25px;
+  left: 50px;
 }
 .category_product_list
   > li:first-child
@@ -1842,7 +1806,7 @@
   .category_product_inner_list
   li:hover
   .btn_category_product_buy {
-  left: 145px;
+  left: 115px;
 }
 .category_product_list
   > li:first-child

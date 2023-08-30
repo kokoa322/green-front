@@ -204,9 +204,9 @@ h3.sub > span > strong {
 .tit-heading-wrap {
   position: relative;
   height: 60px;
-  padding-top: 30px;
   border-bottom: 3px solid #241d1e;
-  margin-top: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 .tit-heading-wrap > h3 {
   display: inline-block;
@@ -216,7 +216,7 @@ h3.sub > span > strong {
   background-image: none;
   color: #222;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 26px;
   text-align: left;
   vertical-align: middle;
 }

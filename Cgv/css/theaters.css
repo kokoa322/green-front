@@ -11,16 +11,42 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+<<<<<<< HEAD
 #section {
   margin-top: 50px;
+=======
+#section{
+>>>>>>> 01cb01b11aa55824a158b3b1807f0486d99ab08f
 }
 
+#section .article1 .tit-heading-wrap{
+    position: relative;
+    height: 60px;
+    border-bottom: 3px solid #241d1e;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+#section .article1 .tit-heading-wrap> h3 {
+    display: inline-block;
+    position: relative;
+    height: inherit;
+    margin: 0;
+    background-image: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
 #section .article1 .sect-common {
-  background: url(../img/bg_showtimes_favorite.gif) no-repeat 0 0;
-  background-size: 100%;
-  width: 874px;
-  height: 400px;
-  padding: 60px 53px;
+    background: url(../img/bg_showtimes_favorite.gif) no-repeat 0 0;
+    background-size: 100%;
+    width: 894px;
+    height: 450px;
+    padding: 60px 53px ;
 }
 
 #section .article1 .sect-common .sect-city1 {

@@ -110,12 +110,11 @@ $.ajax({
                 </div>
               </div>
               <div class="category_product_detail_btn_wrap">
-               
-                <a href="#" id="cart">
-                장바구니
+                <a href="javascript:;" id="cart">
+                  장바구니
                 </a>
-                <a href="#" onclick="javascript:app.goLogin();return false;">
-                구매하기
+                <a href="#" id="buy"onclick="javascript:app.goLogin();return false;">
+                  구매하기
                 </a>
               </div>
             </div>
