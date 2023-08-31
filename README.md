@@ -23,7 +23,7 @@
 <br>
 <br>
 
-👩‍🦼 [그린CGV 바로가기](http://127.0.0.1:5500/Cgv/index.html)
+👩‍🦼 [그린CGV 바로가기](https://github.com/kokoa322/green-front/Cgv/index.html)
 
 <br>
 
