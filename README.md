@@ -131,22 +131,20 @@
 
 ## Project Design
 
-### Service Architecture
+### JSON ERD
 
-<img width="2228" alt="MPNP Architecture" src="https://user-images.githubusercontent.com/90380269/182749337-887ec52f-c1c5-4656-a1be-8b90f5041dba.png">
+![그린CGV JSON](https://github.com/kokoa322/green-front/assets/105048235/19911e08-f967-4e4a-b91d-133d55aee463)
+
+
 
 
 
 <br>
 
-### ERD
+### 깃 전략
 
-![배슐랭_ERD](https://user-images.githubusercontent.com/90380269/181498144-bb8968c8-f6be-44a6-8fca-6a9dba3bd8bf.png)
+![깃 전략](https://github.com/kokoa322/green-front/assets/105048235/4c0d424e-fe34-485e-a287-1e197767c88a)
 
-
-### API
-
-[API 설계](https://planet-punishment-427.notion.site/API-829b965bd9ed4347ab51701fcf1d3896)
 
 
 <br>
